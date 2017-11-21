@@ -1,0 +1,116 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Assignment 2</title>
+    <meta name="description" content="Assignment 2 News Site">
+    <meta name="author" content="Kyle Higginson">
+
+    <link rel="stylesheet" href="styles/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="styles/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/news_site.css">
+
+</head>
+
+<header>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="#">News Site</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">World</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Politics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Technology</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Science</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Entertainment</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <div class="ui-widget">
+                    <label for="input">Tags: </label>
+                    <input id="input">
+                </div>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>Popular News</h2>
+        <div class="row" id="popularHeader"></div>
+        <h2>Recent News</h2>
+        <div class="row" id="recentHeader"></div>
+    </div>
+
+</header>
+
+<body>
+
+<section id="sportNewsSection">
+
+    <div class="container">
+        <h2>Recent Sport News</h2>
+        <div class="row"></div>
+        <div class="extra">
+            <div class="row">
+            </div>
+        </div>
+        <button class="btn btn-info see-more-btn">See More</button>
+    </div>
+
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="seeMoreModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="articleTitle">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img id="articleImg" src="">
+                <p id="articleBody"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<footer>
+    <h4>Created by Kyle Higginson</h4>
+    <h4>Interactive Web Computing: Assignment 1</h4>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/news_site.js"></script>
+</footer>
+</html>
