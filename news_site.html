@@ -15,9 +15,9 @@
 
 </head>
 
-<header>
+<header id="newsHeader">
 
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-md fixed-top">
         <a class="navbar-brand" href="#">News Site</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,10 +27,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" data-target="newsHeader">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">World</a>
+                    <a class="nav-link" data-target="sportNewsSection">Sport</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Politics</a>
@@ -45,20 +45,30 @@
                     <a class="nav-link" href="#">Entertainment</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <div class="ui-widget">
-                    <label for="input">Tags: </label>
-                    <input id="input">
-                </div>
-            </form>
+            <p>Search Articles</p>
+            <div class="ui-widget">
+                <input id="input">
+            </div>
         </div>
     </nav>
 
     <div class="container">
         <h2>Popular News</h2>
-        <div class="row" id="popularHeader"></div>
+        <div class="row" id="popularHeader">
+            <div class="extra">
+                <div class="row">
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-info see-more-btn" data-target="popularHeader">See More</button>
         <h2>Recent News</h2>
-        <div class="row" id="recentHeader"></div>
+        <div class="row" id="recentHeader">
+            <div class="extra">
+                <div class="row">
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-info see-more-btn" data-target="recentHeader">See More</button>
     </div>
 
 </header>
@@ -70,11 +80,6 @@
     <div class="container">
         <h2>Recent Sport News</h2>
         <div class="row"></div>
-        <div class="extra">
-            <div class="row">
-            </div>
-        </div>
-        <button class="btn btn-info see-more-btn">See More</button>
     </div>
 
 </section>
@@ -112,5 +117,6 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
     <script src="scripts/news_site.js"></script>
+    <script src="scripts/article_section.js"></script>
 </footer>
 </html>
