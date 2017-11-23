@@ -8,19 +8,18 @@ $(document).ready(function () {
     $("header nav li a").click(function () {
         var section = $("#" + $(this).data('target'));
         $('html, body').animate({
-            scrollTop: section.offset().top
+            scrollTop: section.offset().top - 60
         }, 2000);
     });
 
     // show extra articles for recent and popular articles
     $(document).on("click", "header button.see-more-btn", function () {
-        var target = "#" + $(this).data("target");
-        var section = $(target + '.row .extra');
+        var section = $('#popularHeader').find('.extra');
         if ($(section).css('display') === "none") {
-            $(section).show("slide", {direction: "left"}, 1000);
+            $(section).show("blind", 500);
             $(this).text("See Less");
         } else {
-            $(section).hide("slide", {direction: "left"}, 1000);
+            $(section).hide("blind", 500);
             $(this).text("See More");
         }
     });

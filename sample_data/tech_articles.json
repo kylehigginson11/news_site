@@ -1,0 +1,500 @@
+{
+  "articles": {
+    "results": [
+      {
+        "id": "28583558",
+        "uri": "766172534",
+        "lang": "eng",
+        "isDuplicate": false,
+        "date": "2017-11-23",
+        "time": "17:30:00",
+        "dateTime": "2017-11-23T17:30:00Z",
+        "sim": 0,
+        "url": "http:\/\/social.techcrunch.com\/2017\/11\/23\/in-mobi-co-founder-launches-yulu-bike-sharing-india\/",
+        "title": "Co-founder of unicorn InMobi is launching a bike-sharing startup in...",
+        "body": "Over in India, there are a handful of startups working to get the country's billion-person population on bikes. One of them is Yulu, co-founded by Amit Gupta, who formerly co-founded profitable, billion-dollar startup InMobi.\n\nIn the next three to four weeks, Yulu will launch its bike-sharing ...",
+        "source": {
+          "id": "1231",
+          "uri": "techcrunch.com",
+          "title": "TechCrunch"
+        },
+        "image": "https:\/\/tctechcrunch2011.files.wordpress.com\/2017\/11\/amit-gupta-e1511375985876.jpg?w=764&h=400&crop=1",
+        "eventUri": null,
+        "shares": {
+          "facebook": 29
+        },
+        "wgt": 1
+      },
+      {
+        "id": "28576130",
+        "uri": "766153028",
+        "lang": "eng",
+        "isDuplicate": false,
+        "date": "2017-11-23",
+        "time": "16:43:00",
+        "dateTime": "2017-11-23T16:43:00Z",
+        "sim": 0.6431372761726379,
+        "url": "http:\/\/social.techcrunch.com\/2017\/11\/23\/teslas-electric-semi-truck-starts-at-150000-reservations-now-live\/",
+        "title": "Tesla's electric Semi truck starts at $150,000, reservations...",
+        "body": "The Tesla Semi, the automaker's all-electric transport truck, will retail starting at $150,000 for a version with 300 miles of range, and will also be available in a $150,000 version with 500 miles of range. Interested parties can pre-order them with a base reservation price of $20,000 - or, if they ...",
+        "source": {
+          "id": "1231",
+          "uri": "techcrunch.com",
+          "title": "TechCrunch"
+        },
+        "image": "https:\/\/tctechcrunch2011.files.wordpress.com\/2017\/11\/4w2a6750.jpg?w=764&h=400&crop=1",
+        "eventUri": "eng-3602311",
+        "shares": {
+          "facebook": 44
+        },
+        "wgt": 1
+      },
+      {
+        "id": "28562557",
+        "uri": "766115990",
+        "lang": "eng",
+        "isDuplicate": false,
+        "date": "2017-11-23",
+        "time": "15:19:00",
+        "dateTime": "2017-11-23T15:19:00Z",
+        "sim": 0.7176470756530762,
+        "url": "http:\/\/social.techcrunch.com\/2017\/11\/23\/putting-the-ai-in-thainksgiving\/",
+        "title": "Putting the \"AI\" in ThAInksgiving | TechCrunch",
+        "body": "Your holiday dinner table is set. Your guests are ready to gab. And, then, in between bites, someone mentions Alexa and AI. \"What's this stuff I'm hearing about killer AI? Cars that decide who to run over? This is crazy!\"\n\nWelcome to Thanksgiving table talk circa 2017.\n\nIt's true that AI and machine ...",
+        "source": {
+          "id": "1231",
+          "uri": "techcrunch.com",
+          "title": "TechCrunch"
+        },
+        "image": "https:\/\/tctechcrunch2011.files.wordpress.com\/2017\/11\/robots-holiday-meal.png?w=764&h=400&crop=1",
+        "eventUri": "eng-3601811",
+        "shares": {
+          "facebook": 21
+        },
+        "wgt": 1
+      },
+      {
+        "id": "28561254",
+        "uri": "766111231",
+        "lang": "eng",
+        "isDuplicate": false,
+        "date": "2017-11-23",
+        "time": "15:10:00",
+        "dateTime": "2017-11-23T15:10:00Z",
+        "sim": 0.6823529601097107,
+        "url": "http:\/\/social.techcrunch.com\/2017\/11\/23\/in-israel-a-blockchain-and-crypto-hyper-cluster-is-just-getting-started\/",
+        "title": "In Israel, a blockchain and crypto hyper-cluster is just getting...",
+        "body": "In recent times, it's Eastern Europe and Russia which have become a hot-bed of crytpocurrency development. But on a recent trip to Tel Aviv, Israel, I took part in what might well turn out to be a historic lunch.\n\nThe lunch took place just after well-known tech investor Moshe Hogeg announced he ...",
+        "source": {
+          "id": "1231",
+          "uri": "techcrunch.com",
+          "title": "TechCrunch"
+        },
+        "image": "https:\/\/tctechcrunch2011.files.wordpress.com\/2017\/11\/img_2851.jpg?w=764&h=400&crop=1",
+        "eventUri": "eng-3598191",
+        "shares": {
+          "facebook": 31,
+          "linkedIn": 6
+        },
+        "wgt": 1
+      },
+      {
+        "id": "28561122",
+        "uri": "766111233",
+        "lang": "eng",
+        "isDuplicate": false,
+        "date": "2017-11-23",
+        "time": "15:09:00",
+        "dateTime": "2017-11-23T15:09:00Z",
+        "sim": 0,
+        "url": "http:\/\/social.techcrunch.com\/2017\/11\/23\/lyft-raising-additional-500-million-on-top-of-recent-1-billion-round\/",
+        "title": "Lyft raising additional $500 million on top of recent $1 billion...",
+        "body": "Lyft is seeking to raise an additional $500 million, over and above the $1 billion it raised in a round led by Alphabet venture arm CaptialG last month. The $500 million is an extension of that round, the company told Axios, and is not yet closed. But it should add to Lyft's overall valuation once ...",
+        "source": {
+          "id": "1231",
+          "uri": "techcrunch.com",
+          "title": "TechCrunch"
+        },
+        "image": "https:\/\/tctechcrunch2011.files.wordpress.com\/2017\/11\/lyft.jpg?w=764&h=400&crop=1",
+        "eventUri": null,
+        "shares": {
+          "facebook": 62,
+          "linkedIn": 5
+        },
+        "wgt": 1
+      },
+      {
+        "id": "28556591",
+        "uri": "766098553",
+        "lang": "eng",
+        "isDuplicate": false,
+        "date": "2017-11-23",
+        "time": "14:42:00",
+        "dateTime": "2017-11-23T14:42:00Z",
+        "sim": 0.8039215803146362,
+        "url": "http:\/\/social.techcrunch.com\/2017\/11\/23\/protonmail-bolts-on-an-encrypted-contacts-manager-and-digital-signing-for-contacts\/",
+        "title": "ProtonMail bolts on an encrypted contacts manager and digital...",
+        "body": "Another neat addition to end-to-end encrypted email client ProtonMail: It's added a zero-access encrypted contacts manager that also digitally signs the contact info you store in it.\n\nThe new features have been added to v3.12 of ProtonMail's web client, with the Swiss-based startup saying it's ...",
+        "source": {
+          "id": "1231",
+          "uri": "techcrunch.com",
+          "title": "TechCrunch"
+        },
+        "image": "https:\/\/tctechcrunch2011.files.wordpress.com\/2017\/02\/phone-encryption.png?w=764&h=400&crop=1",
+        "eventUri": "eng-3603733",
+        "shares": {
+          "facebook": 10
+        },
+        "wgt": 1
+      },
+      {
+        "id": "28552071",
+        "uri": "766086851",
+        "lang": "eng",
+        "isDuplicate": false,
+        "date": "2017-11-23",
+        "time": "14:15:00",
+        "dateTime": "2017-11-23T14:15:00Z",
+        "sim": 0,
+        "url": "http:\/\/social.techcrunch.com\/2017\/11\/23\/twitter-is-testing-bookmarks-a-feature-to-privately-flag-tweets-for-later\/",
+        "title": "Twitter is testing Bookmarks, a feature to privately flag Tweets...",
+        "body": "Last month, Twitter started work on a new \"save for later\" feature for Tweets in your timeline that you wanted to flag to refer back to in the future. Now it's given the feature a name -- it will be called Bookmarks -- and is running tests with it.\n\nThe news was made public last night in a series of ...",
+        "source": {
+          "id": "1231",
+          "uri": "techcrunch.com",
+          "title": "TechCrunch"
+        },
+        "image": "https:\/\/tctechcrunch2011.files.wordpress.com\/2017\/05\/gettyimages-471561053.jpg?w=764&h=400&crop=1",
+        "eventUri": null,
+        "shares": {
+          "facebook": 52
+        },
+        "wgt": 1
+      },
+      {
+        "id": "28545346",
+        "uri": "766069949",
+        "lang": "eng",
+        "isDuplicate": false,
+        "date": "2017-11-23",
+        "time": "13:29:00",
+        "dateTime": "2017-11-23T13:29:00Z",
+        "sim": 0.4745098054409027,
+        "url": "http:\/\/social.techcrunch.com\/2017\/11\/23\/tesla-completes-the-worlds-largest-battery-for-australian-wind-farm\/",
+        "title": "Tesla completes the world's largest battery for Australian...",
+        "body": "Tesla has managed to deliver something on time, even if it \\'s falling behind its projections for the Model 3 electric car: It has completed production of a massive battery farm in South Australia, which is designed to capture and store energy produced by a wind farm and distribute it to the grid ...",
+        "source": {
+          "id": "1231",
+          "uri": "techcrunch.com",
+          "title": "TechCrunch"
+        },
+        "image": "https:\/\/tctechcrunch2011.files.wordpress.com\/2017\/11\/gettyimages-855492106.jpg?w=764&h=400&crop=1",
+        "eventUri": "eng-3604984",
+        "shares": {
+          "facebook": 90
+        },
+        "wgt": 1
+      },
+      {
+        "id": "28523195",
+        "uri": "766011374",
+        "lang": "eng",
+        "isDuplicate": false,
+        "date": "2017-11-23",
+        "time": "11:31:00",
+        "dateTime": "2017-11-23T11:31:00Z",
+        "sim": 0.5843137502670288,
+        "url": "http:\/\/social.techcrunch.com\/2017\/11\/23\/lets-talk-about-commercial-drones-at-techcrunch-disrupt-berlin\/",
+        "title": "Let's talk about commercial drones at TechCrunch Disrupt Berlin |...",
+        "body": "Everyone loves drones, including companies with very specific needs. Drones once were the hot new thing and the perfect birthday gift. But drone makers are now realizing that there's a bigger opportunity with commercial use cases, from farming to inspection. That's why we're excited to announce that ...",
+        "source": {
+          "id": "1231",
+          "uri": "techcrunch.com",
+          "title": "TechCrunch"
+        },
+        "image": "https:\/\/tctechcrunch2011.files.wordpress.com\/2017\/11\/parrot-bebop-2-power-cockpitglasses-and-controller-consumer-drone-dronedj-f.jpg?w=764&h=400&crop=1",
+        "eventUri": "eng-3603144",
+        "shares": {
+          "facebook": 58,
+          "linkedIn": 3
+        },
+        "wgt": 1
+      },
+      {
+        "id": "28517747",
+        "uri": "765997629",
+        "lang": "eng",
+        "isDuplicate": false,
+        "date": "2017-11-23",
+        "time": "11:01:00",
+        "dateTime": "2017-11-23T11:01:00Z",
+        "sim": 0.6549019813537598,
+        "url": "http:\/\/social.techcrunch.com\/2017\/11\/23\/ftc-evaluating-serious-issues-raised-by-uber-breach\/",
+        "title": "FTC evaluating \"serious issues\" raised by Uber breach |...",
+        "body": "The FTC has now put out a statement regarding the Uber data breach which the company concealed for the best part of a year before finally disclosing it, under new CEO Dara Khosrowshahi, on Tuesday by passing details to Bloomberg.\n\nLate yesterday a spokesperson for the federal agency told Reuters: ...",
+        "source": {
+          "id": "1231",
+          "uri": "techcrunch.com",
+          "title": "TechCrunch"
+        },
+        "image": "https:\/\/tctechcrunch2011.files.wordpress.com\/2017\/11\/uber-icon-glitched-11-21-2017-4-47-55-pm.png?w=764&h=400&crop=1",
+        "eventUri": "eng-3602105",
+        "shares": {
+          "facebook": 26
+        },
+        "wgt": 1
+      },
+      {
+        "id": "28511840",
+        "uri": "765982503",
+        "lang": "eng",
+        "isDuplicate": false,
+        "date": "2017-11-23",
+        "time": "10:29:00",
+        "dateTime": "2017-11-23T10:29:00Z",
+        "sim": 0,
+        "url": "http:\/\/social.techcrunch.com\/2017\/11\/23\/mobile-payment-and-loyalty-platform-yoyo-wallet-integrates-with-starling-bank\/",
+        "title": "Mobile payment and loyalty platform Yoyo Wallet integrates with...",
+        "body": "In another example of Starling Bank jumping on the Open Banking\/PSD2 train before legislation in the U.K. and Europe next year will force banks to do so, it is launching its latest API partnership: this time with Yoyo Wallet, the U.K.-based mobile payment and loyalty platform.\n\nThe new integration ...",
+        "source": {
+          "id": "1231",
+          "uri": "techcrunch.com",
+          "title": "TechCrunch"
+        },
+        "image": "https:\/\/tctechcrunch2011.files.wordpress.com\/2017\/11\/yoyo3.png?w=764&h=400&crop=1",
+        "eventUri": null,
+        "shares": {
+          "facebook": 52,
+          "linkedIn": 6
+        },
+        "wgt": 1
+      },
+      {
+        "id": "28472831",
+        "uri": "765861103",
+        "lang": "eng",
+        "isDuplicate": false,
+        "date": "2017-11-23",
+        "time": "05:40:00",
+        "dateTime": "2017-11-23T05:40:00Z",
+        "sim": 0.800000011920929,
+        "url": "http:\/\/social.techcrunch.com\/2017\/11\/22\/indian-home-healthcare-platform-portea-medical-raises-26m-series-c\/",
+        "title": "Indian home healthcare platform Portea Medical raises $26M Series C...",
+        "body": "Portea Medical, one of India's biggest platforms for home healthcare visits, has raised $26 million in Series C funding to expand its service range. The round was led by Sabre Partners and MEMG CDC, with participation from returning investors Accel (which led Portea's Series B two years ago), the ...",
+        "source": {
+          "id": "1231",
+          "uri": "techcrunch.com",
+          "title": "TechCrunch"
+        },
+        "image": "https:\/\/tctechcrunch2011.files.wordpress.com\/2017\/11\/meena-ganesh-md-ceo_portea-medical-1.jpg?w=764&h=400&crop=1",
+        "eventUri": "eng-3600854",
+        "shares": {
+          "facebook": 106,
+          "linkedIn": 62
+        },
+        "wgt": 1
+      },
+      {
+        "id": "28437987",
+        "uri": "765752236",
+        "lang": "eng",
+        "isDuplicate": false,
+        "date": "2017-11-22",
+        "time": "23:00:00",
+        "dateTime": "2017-11-22T23:00:00Z",
+        "sim": 0.4392156898975372,
+        "url": "http:\/\/social.techcrunch.com\/2017\/11\/22\/aws-ai\/",
+        "title": "AWS ramps up in AI with new Rekognition features and consultancy...",
+        "body": "Ahead of Amazon's AWS division big Re:invent conference next week, the company has announced two developments in the area of artificial intelligence. AWS is opening a machine learning lab, ML Solutions Lab, to pair Amazon machine learning experts with customers looking to build solutions using the ...",
+        "source": {
+          "id": "1231",
+          "uri": "techcrunch.com",
+          "title": "TechCrunch"
+        },
+        "image": "https:\/\/tctechcrunch2011.files.wordpress.com\/2016\/10\/gettyimages-85758332.jpg?w=764&h=400&crop=1",
+        "eventUri": "eng-3599235",
+        "shares": {
+          "facebook": 171,
+          "linkedIn": 175
+        },
+        "wgt": 1
+      },
+      {
+        "id": "28432350",
+        "uri": "765734537",
+        "lang": "eng",
+        "isDuplicate": false,
+        "date": "2017-11-22",
+        "time": "22:10:00",
+        "dateTime": "2017-11-22T22:10:00Z",
+        "sim": 0,
+        "url": "http:\/\/social.techcrunch.com\/2017\/11\/22\/the-rise-of-spacs\/",
+        "title": "The rise of SPACs | TechCrunch",
+        "body": "Every few years efforts to redefine the IPO emerge, and as night follows day, investors get hurt and calls for tighter regulatory reform echo in legislative chambers and cable TV studios. The last significant \"re-invention\" emerged in the height of the dot-com boom when online brokers started ...",
+        "source": {
+          "id": "1231",
+          "uri": "techcrunch.com",
+          "title": "TechCrunch"
+        },
+        "image": "https:\/\/tctechcrunch2011.files.wordpress.com\/2017\/09\/gettyimages-812963802.jpg?w=764&h=400&crop=1",
+        "eventUri": null,
+        "shares": {
+          "facebook": 36,
+          "linkedIn": 9
+        },
+        "wgt": 1
+      },
+      {
+        "id": "28432342",
+        "uri": "765734536",
+        "lang": "eng",
+        "isDuplicate": false,
+        "date": "2017-11-22",
+        "time": "22:10:00",
+        "dateTime": "2017-11-22T22:10:00Z",
+        "sim": 0,
+        "url": "http:\/\/social.techcrunch.com\/2017\/11\/22\/youtube-tightens-rules-on-kid-related-content\/",
+        "title": "YouTube tightens rules on kid-related content | TechCrunch",
+        "body": "YouTube, that strange stew of the best and worst content on the web, is cracking down on abuse and error relating to kid-focused video. Jokers and questionably ethical creators who targeted kids or used them in their videos will have a harder time getting viewers and getting money.\n\nThe tendency of ...",
+        "source": {
+          "id": "1231",
+          "uri": "techcrunch.com",
+          "title": "TechCrunch"
+        },
+        "image": "https:\/\/tctechcrunch2011.files.wordpress.com\/2017\/11\/screen-shot-2017-11-12-at-11-06-33-am.png?w=764&h=400&crop=1",
+        "eventUri": null,
+        "shares": {
+          "facebook": 32,
+          "linkedIn": 7
+        },
+        "wgt": 1
+      },
+      {
+        "id": "28416999",
+        "uri": "765684661",
+        "lang": "eng",
+        "isDuplicate": false,
+        "date": "2017-11-22",
+        "time": "20:12:00",
+        "dateTime": "2017-11-22T20:12:00Z",
+        "sim": 0.7843137383460999,
+        "url": "http:\/\/social.techcrunch.com\/2017\/11\/22\/apples-thanksgiving-ad-is-mostly-about-the-airpods\/",
+        "title": "Apple's Thanksgiving ad is mostly about the AirPods | TechCrunch",
+        "body": "Every year, Apple airs a new ad in the U.S. for Thanksgiving. Compared to other Apple ads, this is less about showing product features and more like a greeting card.\n\nThis year is no different -- you still see a lot of AirPods. Apple's new ad is called \"Sway\" and takes place in the streets of New ...",
+        "source": {
+          "id": "1231",
+          "uri": "techcrunch.com",
+          "title": "TechCrunch"
+        },
+        "image": "https:\/\/tctechcrunch2011.files.wordpress.com\/2017\/11\/60_90_sway_keyframe.jpg?w=764&h=400&crop=1",
+        "eventUri": "eng-3604586",
+        "shares": {
+          "facebook": 38
+        },
+        "wgt": 1
+      },
+      {
+        "id": "28413875",
+        "uri": "765676742",
+        "lang": "eng",
+        "isDuplicate": false,
+        "date": "2017-11-22",
+        "time": "19:48:00",
+        "dateTime": "2017-11-22T19:48:00Z",
+        "sim": 0,
+        "url": "http:\/\/social.techcrunch.com\/2017\/11\/22\/altschool-wants-to-change-how-kids-learn-but-fears-that-its-failing-students-are-surfacing\/",
+        "title": "AltSchool wants to change how kids learn, but fears that it's...",
+        "body": "Earlier this week, Business Insider reported that numerous families have grown frustrated with the education their children are receiving at AltSchool, an ambitious San Francisco-based ed tech company that four years ago began opening physical grade schools and promising a personalized learning ...",
+        "source": {
+          "id": "1231",
+          "uri": "techcrunch.com",
+          "title": "TechCrunch"
+        },
+        "image": "https:\/\/tctechcrunch2011.files.wordpress.com\/2014\/05\/max-ventilla1.jpg?w=764&h=400&crop=1",
+        "eventUri": null,
+        "shares": {
+          "facebook": 6
+        },
+        "wgt": 1
+      },
+      {
+        "id": "28398058",
+        "uri": "765632712",
+        "lang": "eng",
+        "isDuplicate": false,
+        "date": "2017-11-22",
+        "time": "18:06:00",
+        "dateTime": "2017-11-22T18:06:00Z",
+        "sim": 0,
+        "url": "http:\/\/social.techcrunch.com\/2017\/11\/22\/snips-lets-you-build-your-own-voice-assistant-to-embed-into-your-devices\/",
+        "title": "Snips lets you build your own voice assistant to embed into your...",
+        "body": "French startup Snips is now helping you build a custom voice assistant for your device. Snips doesn't use Amazon's Alexa Voice Service or Google Assistant SDK -- the company is building its own voice assistant so that you can embed it on your devices. And the best part is that it doesn't send ...",
+        "source": {
+          "id": "1231",
+          "uri": "techcrunch.com",
+          "title": "TechCrunch"
+        },
+        "image": "https:\/\/tctechcrunch2011.files.wordpress.com\/2017\/10\/voice-assistants.png?w=764&h=400&crop=1",
+        "eventUri": null,
+        "shares": {
+          "facebook": 63,
+          "linkedIn": 8
+        },
+        "wgt": 1
+      },
+      {
+        "id": "28395901",
+        "uri": "765625854",
+        "lang": "eng",
+        "isDuplicate": false,
+        "date": "2017-11-22",
+        "time": "17:51:00",
+        "dateTime": "2017-11-22T17:51:00Z",
+        "sim": 0,
+        "url": "http:\/\/social.techcrunch.com\/2017\/11\/22\/net-neutrality-advocates-plan-protests-for-december-7-at-verizon-stores\/",
+        "title": "Net Neutrality advocates plan protests for December 7 at Verizon...",
+        "body": "On December 14, the FCC will vote on whether or not to roll back Obama-era policies protecting a free and open internet. In fact, during yesterday's announcement of the upcoming vote, the FCC neglected to mention the historic 22 million comments on the issue, the majority of which were negative.\n\nIn ...",
+        "source": {
+          "id": "1231",
+          "uri": "techcrunch.com",
+          "title": "TechCrunch"
+        },
+        "image": "https:\/\/tctechcrunch2011.files.wordpress.com\/2014\/01\/verizon-wireless-store-front.jpg?w=610&h=400&crop=1",
+        "eventUri": null,
+        "shares": {
+          "facebook": 39,
+          "linkedIn": 7
+        },
+        "wgt": 1
+      },
+      {
+        "id": "28392072",
+        "uri": "765616509",
+        "lang": "eng",
+        "isDuplicate": false,
+        "date": "2017-11-22",
+        "time": "17:30:00",
+        "dateTime": "2017-11-22T17:30:00Z",
+        "sim": 0.6705882549285889,
+        "url": "http:\/\/social.techcrunch.com\/2017\/11\/22\/russian-trolls\/",
+        "title": "Facebook will show which Russian election troll accounts you...",
+        "body": "Facebook is building out a tool to show which Facebook Pages or Instagram accounts associated with Russian Internet Research Agency election troll farm you Liked or followed. Launching by the end of the year as part of the Facebook Help Center, the tool will show a list of all the IRA accounts you ...",
+        "source": {
+          "id": "1231",
+          "uri": "techcrunch.com",
+          "title": "TechCrunch"
+        },
+        "image": "https:\/\/tctechcrunch2011.files.wordpress.com\/2017\/05\/russia-hacking.jpg?w=764&h=400&crop=1",
+        "eventUri": "eng-3604137",
+        "shares": {
+          "facebook": 32
+        },
+        "wgt": 1
+      }
+    ],
+    "totalResults": 1143,
+    "page": 1,
+    "count": 20,
+    "pages": 58
+  }
+}

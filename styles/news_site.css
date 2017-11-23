@@ -7,6 +7,10 @@ body {
     font-family: "Arial";
 }
 
+body{
+    position: relative;
+}
+
 /* Styling header element */
 header {
     position: relative;
@@ -15,8 +19,8 @@ header {
     /* fallback for old browsers */
     background-color: #e86655;
     color: #fffdf3;
-    padding-top: 30px;
-    min-height: 700px;
+    padding-top: 70px;
+    min-height: 500px;
 }
 
 header h2:first-child {
@@ -29,12 +33,16 @@ nav.navbar {
     height: 60px;
 }
 
+nav. .nav-link.active {
+    background-color: pink!important;
+}
+
 nav.navbar a {
     color: white;
 }
 
 nav.navbar a:hover {
-    color: yellow;
+    color: #e86655;
 }
 
 header .see-more-btn {
@@ -98,6 +106,10 @@ section {
     padding: 50px 0 50px 0;
 }
 
+section:last-of-type {
+    margin-bottom: 80px;
+}
+
 section h2 {
     text-align: center;
 }
@@ -121,21 +133,29 @@ header .extra {
     cursor: pointer;
 }
 
-#sportNewsSection .full-article {
-}
-
 #articleImg {
     max-width: 200px;
     margin: auto;
+    display: block;
+    padding: 15px 0 15px 0;
+}
+
+.modal-body .social-shares {
+    display: flex;
+    text-align: center;
+}
+
+.modal-body .social-shares img{
+    margin: -15px 0 0 10px;
 }
 
 /* Styling of footer */
 footer {
-    margin-top: 20px;
-    background-color: #fffefa;
-    padding: 20px 0 10px 0;
-    color: #3b3a38;
+    background-color: #000000;
+    color: #ffde00;
+    padding: 10px 0 10px 0;
     text-align: center;
-    min-height: 100px;
+    height: 40px;
     position: relative;
+    font-size: 18px;
 }

@@ -15,70 +15,72 @@
 
 </head>
 
+<body>
+
 <header id="newsHeader">
 
-    <nav class="navbar navbar-expand-md fixed-top">
-        <a class="navbar-brand" href="#">News Site</a>
+    <nav class="navbar navbar-expand-md fixed-top" id="newsNav">
+        <a class="navbar-brand" href="#newsHeader">News Site</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" data-target="newsHeader">Home <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sportNewsSection" data-target="sportNewsSection">Sport</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-target="sportNewsSection">Sport</a>
+                    <a class="nav-link" href="#techNewsSection" data-target="techNewsSection">Technology</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Politics</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Technology</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Science</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Entertainment</a>
+                    <a class="nav-link" href="#politicsNewsSection" data-target="politicsNewsSection">Politics</a>
                 </li>
             </ul>
             <p>Search Articles</p>
             <div class="ui-widget">
                 <input id="input">
             </div>
+            <button class="btn btn-dark" id="clearInputButton">Clear</button>
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container" id="popularHeader">
         <h2>Popular News</h2>
-        <div class="row" id="popularHeader">
-            <div class="extra">
-                <div class="row">
-                </div>
+        <div class="row">
+        </div>
+        <div class="extra">
+            <div class="row">
             </div>
         </div>
         <button class="btn btn-info see-more-btn" data-target="popularHeader">See More</button>
-        <h2>Recent News</h2>
-        <div class="row" id="recentHeader">
-            <div class="extra">
-                <div class="row">
-                </div>
-            </div>
-        </div>
-        <button class="btn btn-info see-more-btn" data-target="recentHeader">See More</button>
     </div>
 
 </header>
 
-<body>
-
 <section id="sportNewsSection">
 
     <div class="container">
-        <h2>Recent Sport News</h2>
+        <h2>Sports News</h2>
+        <div class="row"></div>
+    </div>
+
+</section>
+
+<section id="techNewsSection">
+
+    <div class="container">
+        <h2>Tech News</h2>
+        <div class="row"></div>
+    </div>
+
+</section>
+
+<section id="politicsNewsSection">
+
+    <div class="container">
+        <h2>Politics News</h2>
         <div class="row"></div>
     </div>
 
@@ -98,8 +100,13 @@
             <div class="modal-body">
                 <img id="articleImg" src="">
                 <p id="articleBody"></p>
+                <div class="social-shares">
+                    <img src="images/facebook_thumb.png">
+                    <p id="facebookLikes"></p>
+                </div>
             </div>
             <div class="modal-footer">
+                <button type="button" class="btn btn-info" id="viewFullArticle">View Full Article</button>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
         </div>
@@ -108,15 +115,16 @@
 
 </body>
 
-<footer>
-    <h4>Created by Kyle Higginson</h4>
-    <h4>Interactive Web Computing: Assignment 1</h4>
+<footer class="fixed-bottom">
+    <marquee direction="left"><p id="recentNewsMarquee"></p>Recent News to Follow</marquee>
     <script type="text/javascript"
             src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.5/umd/popper.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/modal.js"></script>
     <script src="scripts/news_site.js"></script>
     <script src="scripts/article_section.js"></script>
+    <script src="scripts/navbar.js"></script>
 </footer>
 </html>

@@ -1,0 +1,475 @@
+{
+  "articles": {
+    "results": [
+      {
+        "id": "28583807",
+        "uri": "766173261",
+        "lang": "eng",
+        "isDuplicate": false,
+        "date": "2017-11-23",
+        "time": "17:31:00",
+        "dateTime": "2017-11-23T17:31:00Z",
+        "sim": 0,
+        "url": "http:\/\/www.bbc.co.uk\/news\/uk-northern-ireland-42101646",
+        "title": "Regret at political donation clarity delay",
+        "body": "Electoral Commission NI has welcomed the government's decision to pave the way for the details of people making donations to political parties in Northern Ireland to be published, but says it is disappointed it did not happen sooner.\n\nOn Thursday morning, the body said it was extremely disappointed ...",
+        "source": {
+          "id": "264",
+          "uri": "bbc.co.uk",
+          "title": "BBC News"
+        },
+        "image": "https:\/\/ichef-1.bbci.co.uk\/news\/560\/cpsprodpb\/12621\/production\/_98879257_cheque.jpg",
+        "eventUri": null,
+        "shares": {},
+        "wgt": 2
+      },
+      {
+        "id": "28583516",
+        "uri": "766172312",
+        "lang": "eng",
+        "isDuplicate": false,
+        "date": "2017-11-23",
+        "time": "17:29:00",
+        "dateTime": "2017-11-23T17:29:00Z",
+        "sim": 0.7098039388656616,
+        "url": "http:\/\/www.bbc.co.uk\/news\/uk-england-merseyside-42098290",
+        "title": "Unions reject bus company's pay offer",
+        "body": "Nine 24-hour strikes by Arriva North West bus staff will go ahead in December after union members voted to reject the company's latest pay offer.\n\nMembers of the Unite and GMB unions will walk out on 4, 7, 12, 13, 14, 20, 21, 22 and 23 December, affecting bus services throughout the region.\n\nA Unite ...",
+        "source": {
+          "id": "264",
+          "uri": "bbc.co.uk",
+          "title": "BBC News"
+        },
+        "image": "https:\/\/ichef-1.bbci.co.uk\/news\/560\/cpsprodpb\/13CD4\/production\/_98880118_mediaitem98880114.jpg",
+        "eventUri": "eng-3600042",
+        "shares": {},
+        "wgt": 2
+      },
+      {
+        "id": "28547370",
+        "uri": "766075155",
+        "lang": "eng",
+        "isDuplicate": false,
+        "date": "2017-11-23",
+        "time": "13:49:00",
+        "dateTime": "2017-11-23T13:49:00Z",
+        "sim": 0.7882353067398071,
+        "url": "http:\/\/www.bbc.co.uk\/news\/world-europe-42098158",
+        "title": "Government's approach to Brexit 'chaotic'",
+        "body": "The government has refused to comment on a leaked report branding its approach to Brexit as \"chaotic\".\n\nThe internal Irish government paper, obtained by RT\u00c9, documents EU figures' scathing assessments of cabinet members such as Brexit Secretary David Davis.\n\nA Czech minister is quoted as describing ...",
+        "source": {
+          "id": "264",
+          "uri": "bbc.co.uk",
+          "title": "BBC News"
+        },
+        "image": "https:\/\/ichef.bbci.co.uk\/news\/560\/cpsprodpb\/3411\/production\/_98792331_mediaitem98792330.jpg",
+        "eventUri": "eng-3605787",
+        "shares": {},
+        "wgt": 2
+      },
+      {
+        "id": "28537358",
+        "uri": "766047548",
+        "lang": "eng",
+        "isDuplicate": false,
+        "date": "2017-11-23",
+        "time": "12:49:00",
+        "dateTime": "2017-11-23T12:49:00Z",
+        "sim": 0,
+        "url": "http:\/\/www.bbc.co.uk\/news\/uk-wales-politics-42097189",
+        "title": "Councils 'want freedom and flexibility'",
+        "body": "Plans to force councils to work together should be dropped, Wales' local government leader has said.\n\nDebbie Wilcox, leader of the Welsh Local Government Association (WLGA), called for \"a new era of freedom and flexibility\" for county halls.\n\nIn a speech in Cardiff, she urged new Local Government ...",
+        "source": {
+          "id": "264",
+          "uri": "bbc.co.uk",
+          "title": "BBC News"
+        },
+        "image": "https:\/\/ichef-1.bbci.co.uk\/news\/560\/cpsprodpb\/97EC\/production\/_98129883_p05gtqc1.jpg",
+        "eventUri": null,
+        "shares": {},
+        "wgt": 2
+      },
+      {
+        "id": "28524383",
+        "uri": "766014896",
+        "lang": "eng",
+        "isDuplicate": false,
+        "date": "2017-11-23",
+        "time": "11:38:00",
+        "dateTime": "2017-11-23T11:38:00Z",
+        "sim": 0.5921568870544434,
+        "url": "http:\/\/www.bbc.co.uk\/news\/technology-42096045",
+        "title": "Facebook to expose Russian fake news pages",
+        "body": "Facebook plans to let people see if they had \"liked\" pages created by \"foreign actors\" to spread propaganda during the US presidential election.\n\nThe social network has previously said as many as 126 million Americans may have seen content uploaded by Russia-based agents over the past two years.\n\nIt ...",
+        "source": {
+          "id": "264",
+          "uri": "bbc.co.uk",
+          "title": "BBC News"
+        },
+        "image": "https:\/\/ichef.bbci.co.uk\/news\/560\/cpsprodpb\/1528B\/production\/_98876668_gettyimages-85595135.jpg",
+        "eventUri": "eng-3604137",
+        "shares": {
+          "facebook": 19
+        },
+        "wgt": 2
+      },
+      {
+        "id": "28511821",
+        "uri": "765982424",
+        "lang": "eng",
+        "isDuplicate": true,
+        "date": "2017-11-23",
+        "time": "10:29:00",
+        "dateTime": "2017-11-23T10:29:00Z",
+        "sim": 0.7921568751335144,
+        "url": "http:\/\/www.bbc.co.uk\/news\/world-europe-42093994",
+        "title": "Pressure on Germany's SPD to join Merkel",
+        "body": "Germany's Social Democrats are under pressure to reconsider an alliance with Chancellor Angela Merkel's conservatives and form a coalition government.\n\nSPD leader Martin Schulz is due to meet President Frank-Walter Steinmeier, who is holding talks to break the impasse.\n\nMr Schulz has refused to ...",
+        "source": {
+          "id": "264",
+          "uri": "bbc.co.uk",
+          "title": "BBC News"
+        },
+        "image": "https:\/\/ichef.bbci.co.uk\/news\/560\/cpsprodpb\/4C5B\/production\/_98874591_1434b64b-0e74-4c75-9060-c6f149946851.jpg",
+        "eventUri": null,
+        "shares": {},
+        "wgt": 2
+      },
+      {
+        "id": "28480697",
+        "uri": "765892785",
+        "lang": "eng",
+        "isDuplicate": false,
+        "date": "2017-11-23",
+        "time": "06:52:00",
+        "dateTime": "2017-11-23T06:52:00Z",
+        "sim": 0,
+        "url": "http:\/\/www.bbc.co.uk\/news\/uk-scotland-42092107",
+        "title": "The papers: SNP 'tax gap' challenge",
+        "body": "The BBC is not responsible for the content of external Internet sites\n\nHammond backed after Budget growth gloom\n\nEconomic forecasts put the chancellor under pressure but Tory MPs back him on stamp duty and Brexit.\n\n'New democracy unfolding' in Zimbabwe Benefits of coffee outweigh risks, says study",
+        "source": {
+          "id": "264",
+          "uri": "bbc.co.uk",
+          "title": "BBC News"
+        },
+        "image": "https:\/\/ichef.bbci.co.uk\/news\/560\/cpsprodpb\/34D7\/production\/_98872531_mail.jpg",
+        "eventUri": null,
+        "shares": {
+          "facebook": 15
+        },
+        "wgt": 2
+      },
+      {
+        "id": "28479546",
+        "uri": "765890256",
+        "lang": "eng",
+        "isDuplicate": false,
+        "date": "2017-11-23",
+        "time": "06:44:00",
+        "dateTime": "2017-11-23T06:44:00Z",
+        "sim": 0,
+        "url": "http:\/\/www.bbc.co.uk\/news\/uk-england-lancashire-42092038",
+        "title": "Seventy people rescued in floods",
+        "body": "Hammond backed after Budget growth gloom\n\nEconomic forecasts put the chancellor under pressure but Tory MPs back him on stamp duty and Brexit.\n\n'New democracy unfolding' in Zimbabwe Benefits of coffee outweigh risks, says study",
+        "source": {
+          "id": "264",
+          "uri": "bbc.co.uk",
+          "title": "BBC News"
+        },
+        "image": "https:\/\/ichef.bbci.co.uk\/news\/560\/cpsprodpb\/14E7B\/production\/_98872658_cd698c6c-4d28-4704-97bf-daf65a43d55a.jpg",
+        "eventUri": null,
+        "shares": {
+          "facebook": 224,
+          "linkedIn": 11
+        },
+        "wgt": 2
+      },
+      {
+        "id": "28448835",
+        "uri": "765783296",
+        "lang": "eng",
+        "isDuplicate": false,
+        "date": "2017-11-23",
+        "time": "00:37:00",
+        "dateTime": "2017-11-23T00:37:00Z",
+        "sim": 0.6078431606292725,
+        "url": "http:\/\/www.bbc.co.uk\/news\/world-africa-42078707",
+        "title": "Will South Africa learn from Mugabe's fall?",
+        "body": "The silence of South Africa's governing African National Congress (ANC), especially in the hours immediately after the fall of Zimbabwe's President Robert Mugabe, was deafening.\n\nIt showed the enormous psychological influence the one-time revolutionary wielded over the party - and it was so stunned ...",
+        "source": {
+          "id": "264",
+          "uri": "bbc.co.uk",
+          "title": "BBC News"
+        },
+        "image": "https:\/\/ichef-1.bbci.co.uk\/news\/560\/cpsprodpb\/1F32\/production\/_98868970_2zuma.jpg",
+        "eventUri": "eng-3600613",
+        "shares": {
+          "facebook": 70
+        },
+        "wgt": 2
+      },
+      {
+        "id": "28435254",
+        "uri": "765743844",
+        "lang": "eng",
+        "isDuplicate": false,
+        "date": "2017-11-22",
+        "time": "22:35:00",
+        "dateTime": "2017-11-22T22:35:00Z",
+        "sim": 0.615686297416687,
+        "url": "http:\/\/www.bbc.co.uk\/news\/uk-scotland-42074547",
+        "title": "Dugdale enters I'm a Celebrity jungle",
+        "body": "Kezia Dugdale has made her first jungle appearance on TV programme I'm A Celebrity... Get Me Out Of Here!\n\nThe former leader of Scottish Labour was introduced as one of two late-entry campmates on Wednesday's live edition of the reality show.\n\nPresenters Ant and Dec ended the programme with a ...",
+        "source": {
+          "id": "264",
+          "uri": "bbc.co.uk",
+          "title": "BBC News"
+        },
+        "image": "https:\/\/ichef.bbci.co.uk\/news\/560\/cpsprodpb\/9853\/production\/_98859983_kez.png",
+        "eventUri": "eng-3603174",
+        "shares": {
+          "facebook": 12
+        },
+        "wgt": 2
+      },
+      {
+        "id": "28406144",
+        "uri": "765654953",
+        "lang": "eng",
+        "isDuplicate": false,
+        "date": "2017-11-22",
+        "time": "18:58:00",
+        "dateTime": "2017-11-22T18:58:00Z",
+        "sim": 0.7647058963775635,
+        "url": "http:\/\/www.bbc.co.uk\/news\/world-africa-42088257",
+        "title": "Zanu-PF purges itself to win back Zimbabweans' trust",
+        "body": "It's been a dramatic, inspiring, earthquake of a week in Zimbabwe. But if you're looking for evidence to show that what really happened was a ruthless reshuffle within the governing party, Zanu-PF, rather than any grander transformation in politics or society, it is worth having a chat with the ...",
+        "source": {
+          "id": "264",
+          "uri": "bbc.co.uk",
+          "title": "BBC News"
+        },
+        "image": "https:\/\/ichef-1.bbci.co.uk\/news\/560\/cpsprodpb\/17E54\/production\/_98867879_a5ca9093-56b9-482c-9501-09576a5fc324.jpg",
+        "eventUri": "eng-3606025",
+        "shares": {
+          "facebook": 6
+        },
+        "wgt": 2
+      },
+      {
+        "id": "28405324",
+        "uri": "765652749",
+        "lang": "eng",
+        "isDuplicate": false,
+        "date": "2017-11-22",
+        "time": "18:52:00",
+        "dateTime": "2017-11-22T18:52:00Z",
+        "sim": 0,
+        "url": "http:\/\/www.bbc.co.uk\/news\/uk-england-essex-42082945",
+        "title": "Ex-MP 'did not trick constituents'",
+        "body": "An ex-Tory and UKIP MP accused of tricking constituents into signing electoral forms has told a court he made clear what the documents were.\n\nBob Spink, 69, who served as an MP for Castle Point, Essex, is accused of fraud during the Castle Point borough council elections in May last year.\n\nHe denies ...",
+        "source": {
+          "id": "264",
+          "uri": "bbc.co.uk",
+          "title": "BBC News"
+        },
+        "image": "https:\/\/ichef-1.bbci.co.uk\/news\/560\/cpsprodpb\/51D5\/production\/_95294902_0dccdf8d-8036-45c2-9335-42eacab8a05b.jpg",
+        "eventUri": null,
+        "shares": {},
+        "wgt": 2
+      },
+      {
+        "id": "28402471",
+        "uri": "765644911",
+        "lang": "eng",
+        "isDuplicate": false,
+        "date": "2017-11-22",
+        "time": "18:33:00",
+        "dateTime": "2017-11-22T18:33:00Z",
+        "sim": 0.7568627595901489,
+        "url": "http:\/\/www.bbc.co.uk\/news\/uk-scotland-edinburgh-east-fife-42083484",
+        "title": "Government loan of \u00a315m available to BiFab",
+        "body": "The Scottish government is prepared to lend the troubled engineering firm BiFab up to \u00a315m, according to Economy Secretary Keith Brown.\n\nThe minister told MSPs that if the loan was required, it would be extended to the firm on commercial terms.\n\nHe said the offer helped unlock a financial package ...",
+        "source": {
+          "id": "264",
+          "uri": "bbc.co.uk",
+          "title": "BBC News"
+        },
+        "image": "https:\/\/ichef.bbci.co.uk\/news\/560\/cpsprodpb\/9296\/production\/_98862573_hi043151660.jpg",
+        "eventUri": "eng-3598137",
+        "shares": {
+          "facebook": 4
+        },
+        "wgt": 2
+      },
+      {
+        "id": "28378142",
+        "uri": "765577927",
+        "lang": "eng",
+        "isDuplicate": false,
+        "date": "2017-11-22",
+        "time": "16:17:00",
+        "dateTime": "2017-11-22T16:17:00Z",
+        "sim": 0.6470588445663452,
+        "url": "http:\/\/www.bbc.co.uk\/news\/uk-politics-42084800",
+        "title": "Corbyn: Budget is record of failure",
+        "body": "Chancellor Philip Hammond's Budget will \"unravel\" within days, continuing the \"misery\" for people across the country, Jeremy Corbyn has predicted.\n\nThe Labour leader attacked the government's failure to reduce the deficit, a rise in rough sleeping and the fact 120,000 people will spend Christmas in ...",
+        "source": {
+          "id": "264",
+          "uri": "bbc.co.uk",
+          "title": "BBC News"
+        },
+        "image": "https:\/\/ichef.bbci.co.uk\/images\/ic\/560x315\/p05nwcmz.jpg",
+        "eventUri": "eng-3603711",
+        "shares": {},
+        "wgt": 2
+      },
+      {
+        "id": "28364685",
+        "uri": "765541329",
+        "lang": "eng",
+        "isDuplicate": false,
+        "date": "2017-11-22",
+        "time": "15:06:00",
+        "dateTime": "2017-11-22T15:06:00Z",
+        "sim": 0.7803921699523926,
+        "url": "http:\/\/www.bbc.co.uk\/news\/uk-scotland-glasgow-west-42084390",
+        "title": "Pensioner critical after street brawl",
+        "body": "A pensioner is fighting for his life after he became involved in a fight outside a pub in Ayrshire.\n\nPolice said the 66-year-old was seriously injured during the incident on Green Street, Saltcoats.\n\nThe man was taken to Crosshouse Hospital, Kilmarnock where staff describe his condition as ...",
+        "source": {
+          "id": "264",
+          "uri": "bbc.co.uk",
+          "title": "BBC News"
+        },
+        "image": "https:\/\/ichef.bbci.co.uk\/news\/560\/cpsprodpb\/51C8\/production\/_98863902_mediaitem98863901.jpg",
+        "eventUri": "eng-3604298",
+        "shares": {},
+        "wgt": 2
+      },
+      {
+        "id": "28345030",
+        "uri": "765489771",
+        "lang": "eng",
+        "isDuplicate": false,
+        "date": "2017-11-22",
+        "time": "13:31:00",
+        "dateTime": "2017-11-22T13:31:00Z",
+        "sim": 0.501960813999176,
+        "url": "http:\/\/www.bbc.co.uk\/news\/uk-wales-politics-42081159",
+        "title": "Budget gives extra \u00a31.2bn to Wales",
+        "body": "Chancellor Phillip Hammond has said the Welsh Government will get an extra \u00a31.2bn to spend as a result of his Budget.\n\nThe money will come to Wales because of extra spending on projects in England - under the so-called Barnett formula.\n\nMr Hammond also said the UK government would move towards ...",
+        "source": {
+          "id": "264",
+          "uri": "bbc.co.uk",
+          "title": "BBC News"
+        },
+        "image": "https:\/\/ichef-1.bbci.co.uk\/news\/560\/cpsprodpb\/F114\/production\/_98861716_hammond_budgetwide.jpg",
+        "eventUri": "eng-3600853",
+        "shares": {},
+        "wgt": 2
+      },
+      {
+        "id": "28333081",
+        "uri": "765456853",
+        "lang": "eng",
+        "isDuplicate": false,
+        "date": "2017-11-22",
+        "time": "12:34:00",
+        "dateTime": "2017-11-22T12:34:00Z",
+        "sim": 0.7803921699523926,
+        "url": "http:\/\/www.bbc.co.uk\/news\/uk-scotland-scotland-politics-42082099",
+        "title": "Dugdale in jungle for 'Labour values'",
+        "body": "MSP Kezia Dugdale has insisted she is going on \"I'm a Celebrity...Get Me Out of Here!\" to promote \"Labour values\".\n\nThe former Scottish Labour leader has flown to Australia to take part in the ITV reality TV programme.\n\nShe said it was an \"amazing opportunity to talk to young people who watch this ...",
+        "source": {
+          "id": "264",
+          "uri": "bbc.co.uk",
+          "title": "BBC News"
+        },
+        "image": "https:\/\/ichef-1.bbci.co.uk\/news\/560\/cpsprodpb\/200E\/production\/_98860280_kez.jpg",
+        "eventUri": "eng-3603174",
+        "shares": {
+          "facebook": 5
+        },
+        "wgt": 2
+      },
+      {
+        "id": "28310993",
+        "uri": "765400752",
+        "lang": "eng",
+        "isDuplicate": false,
+        "date": "2017-11-22",
+        "time": "10:47:00",
+        "dateTime": "2017-11-22T10:47:00Z",
+        "sim": 0,
+        "url": "http:\/\/www.bbc.co.uk\/news\/blogs-news-from-elsewhere-42079647",
+        "title": "Eel-airplane hybrid wins mascot prize",
+        "body": "A half-airplane, half-eel creation has been named Japan's favourite mascot following a vote in which hundreds of thousands of people took part.\n\nThe city of Narita's Unari-kun polled a staggering 805,328 votes in the annual Yuru Chara Grand Prix to choose the country's top regional mascot, the ...",
+        "source": {
+          "id": "264",
+          "uri": "bbc.co.uk",
+          "title": "BBC News"
+        },
+        "image": "https:\/\/ichef-1.bbci.co.uk\/news\/560\/cpsprodpb\/12D81\/production\/_98858177_mascot4.jpg",
+        "eventUri": null,
+        "shares": {
+          "facebook": 4
+        },
+        "wgt": 2
+      },
+      {
+        "id": "28245013",
+        "uri": "765212147",
+        "lang": "eng",
+        "isDuplicate": false,
+        "date": "2017-11-22",
+        "time": "03:17:00",
+        "dateTime": "2017-11-22T03:17:00Z",
+        "sim": 0.6901960968971252,
+        "url": "http:\/\/www.bbc.co.uk\/news\/world-australia-42075108",
+        "title": "Australia dual citizen row claims ninth MP",
+        "body": "A ninth Australian parliamentarian will be unseated by a dual citizenship saga.\n\nSenator Skye Kakoschke-Moore, from minor party the Nick Xenophon Team, has said she will resign after learning she inherited UK citizenship from her Singapore-born mother.\n\nAustralia's constitution bans federal ...",
+        "source": {
+          "id": "264",
+          "uri": "bbc.co.uk",
+          "title": "BBC News"
+        },
+        "image": "https:\/\/ichef.bbci.co.uk\/news\/560\/cpsprodpb\/13FAB\/production\/_98853818_gettyimages-544284096.jpg",
+        "eventUri": "eng-3602473",
+        "shares": {
+          "facebook": 10
+        },
+        "wgt": 2
+      },
+      {
+        "id": "28243135",
+        "uri": "765205809",
+        "lang": "eng",
+        "isDuplicate": false,
+        "date": "2017-11-22",
+        "time": "02:53:00",
+        "dateTime": "2017-11-22T02:53:00Z",
+        "sim": 0.6000000238418579,
+        "url": "http:\/\/www.bbc.co.uk\/news\/world-africa-42072673",
+        "title": "Jubilation greets end of Mugabe era",
+        "body": "Jubilant Zimbabweans celebrated late into the night after Robert Mugabe resigned as president.\n\nHe held power for 37 years and once said \"only God\" could remove him.\n\nWhile still considered by some to be an African independence hero, his many critics see him as a despot who ruled by fear and brought ...",
+        "source": {
+          "id": "264",
+          "uri": "bbc.co.uk",
+          "title": "BBC News"
+        },
+        "image": "https:\/\/ichef.bbci.co.uk\/images\/ic\/560x315\/p05nt3bn.jpg",
+        "eventUri": "eng-3599299",
+        "shares": {
+          "facebook": 443,
+          "pinterest": 3,
+          "linkedIn": 8
+        },
+        "wgt": 2
+      }
+    ],
+    "totalResults": 462,
+    "page": 1,
+    "count": 20,
+    "pages": 24
+  }
+}
