@@ -7,43 +7,46 @@
     <title>Assignment 2</title>
     <meta name="description" content="Assignment 2 News Site">
     <meta name="author" content="Kyle Higginson">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="styles/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="styles/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="styles/news_site.css">
-
 </head>
 
 <body>
 
 <header id="newsHeader">
 
-    <nav class="navbar navbar-expand-md fixed-top" id="newsNav">
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top" id="newsNav">
         <a class="navbar-brand" href="#newsHeader">News Site</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#sportNewsSection" data-target="sportNewsSection">Sport</a>
+                    <a class="nav-link" href="#sportNewsSection" data-target=0>Sport</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#techNewsSection" data-target="techNewsSection">Technology</a>
+                    <a class="nav-link" href="#techNewsSection" data-target=1>Technology</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#politicsNewsSection" data-target="politicsNewsSection">Politics</a>
+                    <a class="nav-link" href="#politicsNewsSection" data-target=2>Politics</a>
                 </li>
             </ul>
             <p>Search Articles</p>
             <div class="ui-widget">
-                <input id="input" data-toggle="popover" title="Search for Article" data-content="Search for a Keyword here for articles">
+                <input id="input" data-toggle="popover" title="Search for Article"
+                       data-content="Search for a Keyword here to return related articles">
             </div>
-            <button class="btn btn-dark" id="clearInputButton" data-toggle="popover" title="Clear Search" data-content="Click here to clear in search field" data-placement="bottom">Clear</button>
-            <p><a>?</a></p>
+            <button class="btn btn-dark" id="clearInputButton" data-toggle="popover" title="Clear Search"
+                    data-content="Click here to clear the search field" data-placement="bottom">Clear
+            </button>
+            <p class="help-toggle"><a>?</a></p>
         </div>
     </nav>
 
@@ -60,37 +63,77 @@
 
 </header>
 
-<section id="sportNewsSection">
+<div id="categoryArticles">
 
-    <div class="container">
-        <h2>Sports News</h2>
-        <div class="row"></div>
-    </div>
+    <ul>
+        <li><a href="#sportNewsSection">Sports</a></li>
+        <li><a href="#techNewsSection">Technology</a></li>
+        <li><a href="#politicsNewsSection">Politics</a></li>
+    </ul>
 
-</section>
+    <section id="sportNewsSection">
 
-<section id="techNewsSection">
+        <div class="container">
+            <h1>Sports News</h1>
+            <img src="images/reload.png" class="img-fluid refresh-icon" data-target="sport">
+            <div class="row"></div>
+        </div>
 
-    <div class="container">
-        <h2>Tech News</h2>
-        <div class="row"></div>
-    </div>
+    </section>
 
-</section>
+    <section id="techNewsSection">
 
-<section id="politicsNewsSection">
+        <div class="container">
+            <h1>Tech News</h1>
+            <img src="images/reload.png" class="img-fluid refresh-icon" data-target="tech">
+            <div class="row"></div>
+        </div>
 
-    <div class="container">
-        <h2>Politics News</h2>
-        <div class="row"></div>
-    </div>
+    </section>
 
-</section>
+    <section id="politicsNewsSection">
 
+        <div class="container">
+            <h1>Politics News</h1>
+            <img src="images/reload.png" class="img-fluid refresh-icon" data-target="politics">
+            <div class="row"></div>
+        </div>
+
+    </section>
+
+</div>
+
+<div id="SportsCentre">
+
+    <ul>
+        <li><a href="#sportNewsSection">League Table</a></li>
+        <li><a href="#techNewsSection">Fixtures</a></li>
+        <li><a href="#politicsNewsSection">Results</a></li>
+    </ul>
+
+    <section id="leagueTableSection">
+
+        <div class="container">
+            <h1>League Table</h1>
+            <div class="row">
+                <table width="700px">
+                    <tr>
+                        <th>Position</th>
+                        <th>Team</th>
+                        <th>Points</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </section>
+
+</div>
 <!-- Modal -->
-<div class="modal fade" id="seeMoreModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+<div class="modal fade bd-example-modal-lg" id="seeMoreModal" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalLabel"
      aria-hidden="true">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="articleTitle">Modal title</h5>
@@ -101,10 +144,6 @@
             <div class="modal-body">
                 <img id="articleImg" src="">
                 <p id="articleBody"></p>
-                <div class="social-shares">
-                    <img src="images/facebook_thumb.png">
-                    <p id="facebookLikes"></p>
-                </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-info" id="viewFullArticle">View Full Article</button>
@@ -114,18 +153,18 @@
     </div>
 </div>
 
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.5/umd/popper.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="scripts/modal.js"></script>
+<script src="scripts/load_articles.js"></script>
+<script src="scripts/article_section.js"></script>
+<script src="scripts/navbar.js"></script>
 </body>
 
 <footer class="fixed-bottom">
     <marquee direction="left"><p id="recentNewsMarquee"></p>Recent News to Follow</marquee>
-    <script type="text/javascript"
-            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.5/umd/popper.min.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="scripts/bootstrap.min.js"></script>
-    <script src="scripts/modal.js"></script>
-    <script src="scripts/news_site.js"></script>
-    <script src="scripts/article_section.js"></script>
-    <script src="scripts/navbar.js"></script>
 </footer>
 </html>
