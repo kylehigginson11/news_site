@@ -10,9 +10,12 @@ $(document).ready(function () {
     });
 	
     $("header nav li a").click(function () {
-		var tab = $(this).data('target')
+		var tab = $(this).data('target');
 		$("#categoryArticles").tabs( "option", "active", tab ); 
         var section = $("#categoryArticles");
+        if (tab === "sportsCentre") {
+            section = $("#sportsCentre");
+        }
         $('html, body').animate({
             scrollTop: section.offset().top - 60
         }, 2000);

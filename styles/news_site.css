@@ -98,12 +98,7 @@ nav p {
 }
 
 section {
-    margin: 20px 0 50px 0;
     padding: 50px 0 50px 0;
-}
-
-section:last-of-type {
-    margin-bottom: 80px;
 }
 
 section h1 {
@@ -113,7 +108,7 @@ section h1 {
     margin: 0 20px 50px 20px;
 }
 
-section > .container > img{
+section > .container > img {
     display: inline-block;
     float: right;
     cursor: pointer;
@@ -168,6 +163,77 @@ header .extra {
     margin: auto;
     display: block;
     padding: 15px 0 15px 0;
+}
+
+#sportsCentre {
+    height: 1000px;
+    background-color: #d8d8d8;
+}
+
+#sportsCentre nav {
+    background-color: #ffcb2b;
+    color: black;
+    padding: 10px 0 10px 20px;
+    margin: 0;
+}
+
+#sportsCentre nav .nav-link.active {
+    border-bottom: solid 3px white;
+}
+
+#sportsCentre nav .nav-link {
+    float: none;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+#sportsCentre h1 {
+    text-align: left;
+    display: block;
+    margin: 10px 0 20px 0;
+}
+
+#sportsCentre .col-md-3 h5 {
+    padding: 40px 0 5px 0;
+}
+
+#sportsCentre .col-md-3 .btn {
+    margin-top: 10px;
+}
+
+/* Sports Centre styling */
+#sportsCentre table {
+    text-align: center;
+}
+
+#sportsCentre th, td {
+    padding: 3px 10px 3px 10px;
+    text-align: center;
+}
+
+#sportsCentre #leagueTableSection tr {
+    text-align: center;
+}
+
+#sportsCentre #fixturesSection table td:nth-child(1) {
+    text-align: left;
+    width: 240px;
+}
+
+#sportsCentre #fixturesSection table td:nth-child(5) {
+    text-align: right;
+    width: 240px;
+}
+
+#sportsCentre .ui-widget-header {
+    background-color: transparent;
+    border: none;
+    padding-top: 150px;
+}
+
+#sportsCentre .ui-widget-header li {
+    width: 200px;
 }
 
 /* Styling of footer */

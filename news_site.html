@@ -37,6 +37,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#politicsNewsSection" data-target=2>Politics</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sportsCentre" data-target="sportsCentre">Sports Centre</a>
+                </li>
             </ul>
             <p>Search Articles</p>
             <div class="ui-widget">
@@ -63,7 +66,7 @@
 
 </header>
 
-<div id="categoryArticles">
+<section id="categoryArticles">
 
     <ul>
         <li><a href="#sportNewsSection">Sports</a></li>
@@ -71,7 +74,7 @@
         <li><a href="#politicsNewsSection">Politics</a></li>
     </ul>
 
-    <section id="sportNewsSection">
+    <div id="sportNewsSection">
 
         <div class="container">
             <h1>Sports News</h1>
@@ -79,9 +82,9 @@
             <div class="row"></div>
         </div>
 
-    </section>
+    </div>
 
-    <section id="techNewsSection">
+    <div id="techNewsSection">
 
         <div class="container">
             <h1>Tech News</h1>
@@ -89,9 +92,9 @@
             <div class="row"></div>
         </div>
 
-    </section>
+    </div>
 
-    <section id="politicsNewsSection">
+    <div id="politicsNewsSection">
 
         <div class="container">
             <h1>Politics News</h1>
@@ -99,36 +102,76 @@
             <div class="row"></div>
         </div>
 
-    </section>
+    </div>
 
-</div>
+</section>
 
-<div id="SportsCentre">
+<section id="sportsCentre">
 
-    <ul>
-        <li><a href="#sportNewsSection">League Table</a></li>
-        <li><a href="#techNewsSection">Fixtures</a></li>
-        <li><a href="#politicsNewsSection">Results</a></li>
-    </ul>
+    <nav class="nav mx-auto">
+        <h3>Football Centre</h3>
+        <a class="nav-link active" data-target=445>Premier League</a>
+        <a class="nav-link" data-target=455>Spanish La Liga</a>
+        <a class="nav-link" data-target=456>Italian Serie A</a>
+    </nav>
 
-    <section id="leagueTableSection">
+    <div class="container">
 
-        <div class="container">
-            <h1>League Table</h1>
-            <div class="row">
-                <table width="700px">
-                    <tr>
-                        <th>Position</th>
-                        <th>Team</th>
-                        <th>Points</th>
-                    </tr>
-                </table>
+        <div class="row">
+            <div class="col col-md-3">
+
+                <ul>
+                    <li><a href="#leagueTableSection">League Table</a></li>
+                    <li><a href="#fixturesSection">Fixtures / Results</a></li>
+                </ul>
+                <h5>Select Game Week</h5>
+                <input type="number" id="gameWeekSpinner" value="1" max="38"/>
+                <button class="btn btn-outline-secondary" id="submitGameWeek">Submit</button>
+
             </div>
+            <div class="col col-md-9">
+
+                <div id="leagueTableSection">
+
+                    <div class="container">
+                        <h1>League Table</h1>
+                        <div class="row">
+                            <table>
+                                <tr>
+                                    <th>Position</th>
+                                    <th>Team</th>
+                                    <th>Played</th>
+                                    <th>Won</th>
+                                    <th>Drawn</th>
+                                    <th>Lost</th>
+                                    <th>GD</th>
+                                    <th>Points</th>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="fixturesSection">
+
+                    <div class="container">
+                        <h1>Fixtures</h1>
+                        <div class="row">
+                            <table>
+                                <tr>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
+    </div>
 
-    </section>
-
-</div>
+</section>
 <!-- Modal -->
 <div class="modal fade bd-example-modal-lg" id="seeMoreModal" tabindex="-1" role="dialog"
      aria-labelledby="exampleModalLabel"
@@ -162,6 +205,7 @@
 <script src="scripts/load_articles.js"></script>
 <script src="scripts/article_section.js"></script>
 <script src="scripts/navbar.js"></script>
+<script src="scripts/sports_centre.js"></script>
 </body>
 
 <footer class="fixed-bottom">

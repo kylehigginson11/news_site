@@ -6,7 +6,7 @@ $(document).ready(function () {
      data-target.
      */
     $(function () {
-        $("#categoryArticles").tabs({active: '#sportNewsSection'});
+        $("#categoryArticles").tabs({active: '#sportNewsSection'})
     });
     // show extra articles for recent and popular articles
     $(document).on("click", "header button.see-more-btn", function () {
