@@ -8,20 +8,28 @@ function loadGameWeeks() {
     }
 }
 
-function loadFixtures(league, matchDay) {
-    var url = "http://api.football-data.org/v1/competitions/" + league + "/fixtures?matchday=" + matchDay;
+function loadFixtures(league, gameWeek) {
+    var url = "https://api.football-data.org/v1/competitions/" + league + "/fixtures?matchday=" + gameWeek;
+    var leagueName = $('#footballCentre').find('nav .nav-link.active').text();
+    $('#fixturesSection').find('h1').text(leagueName + " Week " + gameWeek + " Fixtures");
     $('#fixturesSection').find('table tbody:last-child').find("tr:gt(0)").remove();
     $.ajax({
         type: 'GET',
         headers: {'X-Auth-Token': 'eef44c20bd9e468597d2c7c85d88eb46'},
-        url: 'sample_data/fixtures.json',
+        url: "sample_data/fixtures.json",
         dataType: 'json',
         success: function (data) {
             var fixtures_array = data['fixtures'];
             $.each(fixtures_array, function (index, value) {
                 var home_team = value["homeTeamName"];
-                var home_score = value["result"]["goalsHomeTeam"];
-                var away_score = value["result"]["goalsAwayTeam"];
+                if (value["status"] === "SCHEDULED") {
+                    var home_score = " ";
+                    var away_score = " ";
+                } else {
+                    var home_score = value["result"]["goalsHomeTeam"];
+                    var away_score = value["result"]["goalsAwayTeam"];
+                }
+
                 var away_team = value["awayTeamName"];
                 $('#fixturesSection').find('table tbody:last-child').append("<tr><td>" + home_team +
                     "</td><td>" + home_score + "</td>"
@@ -37,12 +45,14 @@ function loadFixtures(league, matchDay) {
 }
 
 function loadLeagueTable(league) {
-    var url = "http://api.football-data.org/v1/competitions/" + league + "/leagueTable";
+    //var url = "https://api.football-data.org/v1/competitions/" + league + "/leagueTable";
+    var leagueName = $('#footballCentre').find('nav .nav-link.active').text();
+    $('#leagueTableSection').find('h1').text(leagueName + " Table");
     $('#leagueTableSection').find('table tbody:last-child').find("tr:gt(0)").remove();
     $.ajax({
         type: 'GET',
         headers: {'X-Auth-Token': 'eef44c20bd9e468597d2c7c85d88eb46'},
-        url: 'sample_data/prem_table.json',
+        url: "sample_data/prem_table.json",
         dataType: 'json',
         success: function (data) {
             var standings_array = data['standing'];
@@ -75,25 +85,48 @@ function loadLeagueTable(league) {
 $(document).ready(function () {
 
     $(function () {
-        $('#sportsCentre').tabs({active: '#fixturesSection'})
+        $('#footballCentre').tabs({active: '#fixturesSection'})
         $("#gameWeekSpinner").spinner();
     });
 
-    loadLeagueTable(445);
     loadGameWeeks();
     loadFixtures(445, 1);
+    loadLeagueTable(445);
 
-    $('#sportsCentre').find('nav .nav-link').click(function () {
+    $('#footballCentre').find('nav .nav-link').click(function () {
         var league = $(this).data('target');
         $(this).addClass("active").siblings().removeClass("active");
         loadLeagueTable(league);
         loadFixtures(league, 1);
     });
-    
+
     $('#submitGameWeek').click(function () {
         var week = $('#gameWeekSpinner').val();
-        var league = $('#sportsCentre').find('nav .nav-link.active').data('target');
+        var league = $('#footballCentre').find('nav .nav-link.active').data('target');
         loadFixtures(league, week);
+    })
+
+    $('#footballCentre').find('ul li a').click(function () {
+        console.log("hellooo");
+        $('#gameWeekForm').toggle();
+    });
+
+    $('.dropdown-menu a').click(function () {
+        var league = $(this).data('target');
+        if (league === 445) {
+            $('#footballCentre').find('nav .nav-link:nth-of-type(1)').addClass("active").siblings().removeClass("active");
+        } else if (league === 455) {
+            $('#footballCentre').find('nav .nav-link:nth-of-type(2)').addClass("active").siblings().removeClass("active");
+        } else {
+            $('#footballCentre').find('nav .nav-link:nth-of-type(3)').addClass("active").siblings().removeClass("active");
+        }
+        $(this).addClass("active").siblings().removeClass("active");
+        loadLeagueTable(league);
+        loadFixtures(league, 1);
+        var section = $('#footballCentre');
+        $('html, body').animate({
+            scrollTop: section.offset().top - 60
+        }, 2000);
     })
 
 

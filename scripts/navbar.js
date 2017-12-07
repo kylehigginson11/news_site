@@ -6,19 +6,26 @@ $(document).ready(function () {
     });
 
     $('nav p.help-toggle > a').click(function () {
-        $('[data-toggle="popover"]').popover('toggle');
+        if ($('.popover').css('opacity') === "1") {
+            $('[data-toggle="popover"]').popover('hide');
+        } else {
+            $('[data-toggle="popover"]').popover('show');
+        }
     });
-	
-    $("header nav li a").click(function () {
-		var tab = $(this).data('target');
-		$("#categoryArticles").tabs( "option", "active", tab ); 
+
+    $("header nav li > a").click(function () {
+        var tab = $(this).data('target');
+        // toggle jQueryUI tab
+        $("#categoryArticles").tabs("option", "active", tab);
         var section = $("#categoryArticles");
-        if (tab === "sportsCentre") {
-            section = $("#sportsCentre");
+        if (tab === "footballCentre" || tab === "newsHeader") {
+            section = $("#" + tab);
         }
         $('html, body').animate({
             scrollTop: section.offset().top - 60
         }, 2000);
+        $("header nav").find(".active").removeClass("active");
+        $(this).parent().addClass("active");
     });
-	
+
 });

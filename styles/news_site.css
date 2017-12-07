@@ -17,8 +17,8 @@ header {
     width: 100%;
     overflow-y: hidden;
     /* fallback for old browsers */
-    background-color: #e86655;
-    color: #fffdf3;
+    background-color: #1972a9;
+    color: #ffffff;
     padding-top: 70px;
     min-height: 500px;
 }
@@ -41,7 +41,7 @@ nav.navbar a {
 }
 
 nav.navbar a:hover {
-    color: #e86655;
+    color: #1972a9;
 }
 
 nav p > a {
@@ -59,6 +59,9 @@ header .see-more-btn {
 
 nav .ui-widget input {
     width: 300px;
+    background: url("../images/search.png") no-repeat scroll left;
+    background-color: white;
+    padding-left: 28px;
 }
 
 .ui-menu .ui-menu-item:first-of-type {
@@ -69,11 +72,45 @@ nav p {
     padding: 15px 10px 0 0;
 }
 
+nav .nav-item.active {
+    border-bottom: solid white 3px;
+}
+
+.navbar-nav > li.dropdown:hover > a,
+.navbar-nav > li.dropdown:hover > a:hover,
+.navbar-nav > li.dropdown:hover > a:focus {
+    background-color: #2f3c4e;
+    color: #ffffff;
+}
+
+li.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    background-color: #2f3c4e;
+    border: none;
+}
+
+.dropdown-menu a:hover {
+    color: #1972a9 !important;
+    background-color: #2f3c4e;
+    cursor: pointer;
+}
+
+.dropdown-menu a.active {
+    color: #ffffff !important;
+    background-color: #2f3c4e;
+}
+
 .full-article {
     border-radius: 0;
     margin: auto;
     display: block;
     min-width: 250px;
+    color: #fff;
+    background-color: #4286a9;
+    cursor: pointer;
 }
 
 #popularHeader h6 {
@@ -103,15 +140,14 @@ section {
 
 section h1 {
     text-align: center;
-    color: #e86655;
+    color: #1972a9;
     display: inline-block;
     margin: 0 20px 50px 20px;
 }
 
-section > .container > img {
-    display: inline-block;
-    float: right;
-    cursor: pointer;
+section > div.sort-by {
+    display: block;
+    margin: auto;
 }
 
 section h6 {
@@ -132,8 +168,22 @@ header .extra {
     margin-top: 50px;
 }
 
+.sort-by-div {
+    float: right;
+    padding-top: 20px;
+}
+
+.sort-by-div > #sortBySelect {
+    width: 150px;
+    height: 40px;
+    top: 0;
+}
+
+#categoryArticles .sort-by-div > label {
+    padding: 0 0 20px 0;
+}
+
 #sportNewsSection button {
-    margin-top: 10px;
     float: right;
     cursor: pointer;
 }
@@ -165,81 +215,97 @@ header .extra {
     padding: 15px 0 15px 0;
 }
 
-#sportsCentre {
-    height: 1000px;
+/* Football Centre Styling */
+
+#footballCentre {
+    height: 900px;
     background-color: #d8d8d8;
 }
 
-#sportsCentre nav {
+#footballCentre nav {
     background-color: #ffcb2b;
     color: black;
     padding: 10px 0 10px 20px;
     margin: 0;
 }
 
-#sportsCentre nav .nav-link.active {
+#footballCentre nav .nav-link.active {
     border-bottom: solid 3px white;
 }
 
-#sportsCentre nav .nav-link {
+#footballCentre nav .nav-link {
     float: none;
     display: inline-block;
     text-align: center;
     cursor: pointer;
 }
 
-#sportsCentre h1 {
+#footballCentre h1 {
     text-align: left;
     display: block;
     margin: 10px 0 20px 0;
 }
 
-#sportsCentre .col-md-3 h5 {
+#footballCentre .col-md-3 h5 {
     padding: 40px 0 5px 0;
 }
 
-#sportsCentre .col-md-3 .btn {
+#footballCentre .col-md-3 .btn {
     margin-top: 10px;
 }
 
-/* Sports Centre styling */
-#sportsCentre table {
+#footballCentre table {
     text-align: center;
 }
 
-#sportsCentre th, td {
+#footballCentre th, td {
     padding: 3px 10px 3px 10px;
     text-align: center;
 }
 
-#sportsCentre #leagueTableSection tr {
+#footballCentre td {
+    border-bottom: solid 1px #b6b6b6;
+}
+
+#footballCentre #leagueTableSection tr {
     text-align: center;
 }
 
-#sportsCentre #fixturesSection table td:nth-child(1) {
+#footballCentre #fixturesSection table td:nth-child(1) {
     text-align: left;
     width: 240px;
 }
 
-#sportsCentre #fixturesSection table td:nth-child(5) {
+#footballCentre #fixturesSection table td:nth-child(5) {
     text-align: right;
     width: 240px;
 }
 
-#sportsCentre .ui-widget-header {
+#footballCentre .ui-widget-header {
     background-color: transparent;
     border: none;
     padding-top: 150px;
 }
 
-#sportsCentre .ui-widget-header li {
+#footballCentre .ui-widget-header li {
     width: 200px;
 }
 
+#gameWeekForm {
+    display: none;
+}
+
 /* Styling of footer */
+
+.info-footer {
+    padding: 30px 0 140px 0;
+    color: black;
+    background-color: white;
+}
+
 footer {
-    background-color: #000000;
-    color: #ffde00;
+    background-color: #2f3c4e;
+    color: #bdbdbd;
     padding: 10px 0 10px 0;
     text-align: center;
     height: 40px;

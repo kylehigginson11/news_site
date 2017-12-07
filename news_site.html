@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="styles/news_site.css">
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -20,7 +23,7 @@
 <header id="newsHeader">
 
     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top" id="newsNav">
-        <a class="navbar-brand" href="#newsHeader">News Site</a>
+        <a class="navbar-brand" href="#newsHeader" data-target="newsHeader"><span><img src="images/logo.png"></span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -28,6 +31,10 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" data-target="newsHeader">Home <span
+                            class="sr-only">(current)</span></a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#sportNewsSection" data-target=0>Sport</a>
                 </li>
@@ -37,8 +44,16 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#politicsNewsSection" data-target=2>Politics</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#sportsCentre" data-target="sportsCentre">Sports Centre</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#footballCentre" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-target="footballCentre">
+                        Football Centre
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" data-target=445>Premier League</a>
+                        <a class="dropdown-item" data-target=455>Spanish La Liga</a>
+                        <a class="dropdown-item" data-target=456>Italian Serie A</a>
+                    </div>
                 </li>
             </ul>
             <p>Search Articles</p>
@@ -49,7 +64,7 @@
             <button class="btn btn-dark" id="clearInputButton" data-toggle="popover" title="Clear Search"
                     data-content="Click here to clear the search field" data-placement="bottom">Clear
             </button>
-            <p class="help-toggle"><a>?</a></p>
+            <p class="help-toggle"><a>Help</a></p>
         </div>
     </nav>
 
@@ -74,11 +89,21 @@
         <li><a href="#politicsNewsSection">Politics</a></li>
     </ul>
 
+    <div class="container">
+        <div class="sort-by-div">
+            <label>Sort By</label>
+            <select id="sortBySelect">
+                <option value="newest">Relevance</option>
+                <option value="newest">Newest First</option>
+                <option value="oldest">Oldest First</option>
+            </select>
+        </div>
+    </div>
+
     <div id="sportNewsSection">
 
         <div class="container">
             <h1>Sports News</h1>
-            <img src="images/reload.png" class="img-fluid refresh-icon" data-target="sport">
             <div class="row"></div>
         </div>
 
@@ -88,7 +113,6 @@
 
         <div class="container">
             <h1>Tech News</h1>
-            <img src="images/reload.png" class="img-fluid refresh-icon" data-target="tech">
             <div class="row"></div>
         </div>
 
@@ -98,7 +122,6 @@
 
         <div class="container">
             <h1>Politics News</h1>
-            <img src="images/reload.png" class="img-fluid refresh-icon" data-target="politics">
             <div class="row"></div>
         </div>
 
@@ -106,7 +129,7 @@
 
 </section>
 
-<section id="sportsCentre">
+<section id="footballCentre">
 
     <nav class="nav mx-auto">
         <h3>Football Centre</h3>
@@ -124,9 +147,12 @@
                     <li><a href="#leagueTableSection">League Table</a></li>
                     <li><a href="#fixturesSection">Fixtures / Results</a></li>
                 </ul>
-                <h5>Select Game Week</h5>
-                <input type="number" id="gameWeekSpinner" value="1" max="38"/>
-                <button class="btn btn-outline-secondary" id="submitGameWeek">Submit</button>
+
+                <div id="gameWeekForm">
+                    <h5>Select Game Week</h5>
+                    <input type="number" id="gameWeekSpinner" value="1" max="38"/>
+                    <button class="btn btn-outline-secondary" id="submitGameWeek">Submit</button>
+                </div>
 
             </div>
             <div class="col col-md-9">
@@ -172,6 +198,12 @@
     </div>
 
 </section>
+
+<footer class="card-footer info-footer">
+    <h4>Interactive Web - Assignment 2</h4>
+    <h5>Rich Internet Application – News site</h5>
+</footer>
+
 <!-- Modal -->
 <div class="modal fade bd-example-modal-lg" id="seeMoreModal" tabindex="-1" role="dialog"
      aria-labelledby="exampleModalLabel"
@@ -205,7 +237,7 @@
 <script src="scripts/load_articles.js"></script>
 <script src="scripts/article_section.js"></script>
 <script src="scripts/navbar.js"></script>
-<script src="scripts/sports_centre.js"></script>
+<script src="scripts/football_centre.js"></script>
 </body>
 
 <footer class="fixed-bottom">
