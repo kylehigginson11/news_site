@@ -1,3 +1,4 @@
+// load 38 options into the game week select element
 function loadGameWeeks() {
     var match_days = 39;
     for (var i = 1; i < match_days; i++) {
@@ -8,6 +9,7 @@ function loadGameWeeks() {
     }
 }
 
+// function to load fixtures, take in the league number and gameweek as parameters and makes AJAX request
 function loadFixtures(league, gameWeek) {
     var url = "https://api.football-data.org/v1/competitions/" + league + "/fixtures?matchday=" + gameWeek;
     var leagueName = $('#footballCentre').find('nav .nav-link.active').text();
@@ -44,6 +46,7 @@ function loadFixtures(league, gameWeek) {
     });
 }
 
+// function to load league table, takes in league number as paramter and makes AJAX request.
 function loadLeagueTable(league) {
     //var url = "https://api.football-data.org/v1/competitions/" + league + "/leagueTable";
     var leagueName = $('#footballCentre').find('nav .nav-link.active').text();
@@ -84,15 +87,19 @@ function loadLeagueTable(league) {
 // Wait for DOM objects to be loaded, then load popular news stories
 $(document).ready(function () {
 
+    // enable jQueryUI tabs and spinner
     $(function () {
-        $('#footballCentre').tabs({active: '#fixturesSection'})
+        $('#footballCentre').tabs();
         $("#gameWeekSpinner").spinner();
     });
 
+    // load the gameweeks select element
     loadGameWeeks();
+    // load premier league fixtures and league table by default
     loadFixtures(445, 1);
     loadLeagueTable(445);
 
+    // load fixtures and table when different league tab is selected
     $('#footballCentre').find('nav .nav-link').click(function () {
         var league = $(this).data('target');
         $(this).addClass("active").siblings().removeClass("active");
@@ -100,34 +107,17 @@ $(document).ready(function () {
         loadFixtures(league, 1);
     });
 
+    // load different game week fixtures when submit button under spinner is clicked
     $('#submitGameWeek').click(function () {
         var week = $('#gameWeekSpinner').val();
         var league = $('#footballCentre').find('nav .nav-link.active').data('target');
         loadFixtures(league, week);
     })
 
+    // hide the game week select element when the table is shown
     $('#footballCentre').find('ul li a').click(function () {
-        console.log("hellooo");
         $('#gameWeekForm').toggle();
     });
-
-    $('.dropdown-menu a').click(function () {
-        var league = $(this).data('target');
-        if (league === 445) {
-            $('#footballCentre').find('nav .nav-link:nth-of-type(1)').addClass("active").siblings().removeClass("active");
-        } else if (league === 455) {
-            $('#footballCentre').find('nav .nav-link:nth-of-type(2)').addClass("active").siblings().removeClass("active");
-        } else {
-            $('#footballCentre').find('nav .nav-link:nth-of-type(3)').addClass("active").siblings().removeClass("active");
-        }
-        $(this).addClass("active").siblings().removeClass("active");
-        loadLeagueTable(league);
-        loadFixtures(league, 1);
-        var section = $('#footballCentre');
-        $('html, body').animate({
-            scrollTop: section.offset().top - 60
-        }, 2000);
-    })
 
 
 });

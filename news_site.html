@@ -22,34 +22,37 @@
 
 <header id="newsHeader">
 
-    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top" id="newsNav">
-        <a class="navbar-brand" href="#newsHeader" data-target="newsHeader"><span><img src="images/logo.png"></span></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="newsNav">
+        <a class="navbar-brand" href="#newsHeader" data-target="newsHeader"><span><img src="images/logo.svg"></span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent"
+                aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="#" data-target="newsHeader">Home <span
                             class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#sportNewsSection" data-target=0>Sport</a>
+                <li class="nav-item dropdown" id="categoryDropdown">
+                    <a class="nav-link dropdown-toggle" href="#footballCentre" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-target="categoryArticles">
+                        Categories
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="categoryDropdown">
+                        <a class="dropdown-item" data-target=0 href="#sportNewsSection">Sport</a>
+                        <a class="dropdown-item" data-target=1 href="#techNewsSection">Technology</a>
+                        <a class="dropdown-item" data-target=2 href="#politicsNewsSection">Politics</a>
+                        <a class="dropdown-item" data-target=3 href="#scienceNewsSection">Science</a>
+                    </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#techNewsSection" data-target=1>Technology</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#politicsNewsSection" data-target=2>Politics</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#footballCentre" id="navbarDropdown" role="button"
+                <li class="nav-item dropdown" id="footballDropdown">
+                    <a class="nav-link dropdown-toggle" href="#footballCentre" role="button"
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-target="footballCentre">
                         Football Centre
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div class="dropdown-menu" aria-labelledby="footballDropdown">
                         <a class="dropdown-item" data-target=445>Premier League</a>
                         <a class="dropdown-item" data-target=455>Spanish La Liga</a>
                         <a class="dropdown-item" data-target=456>Italian Serie A</a>
@@ -76,7 +79,7 @@
             <div class="row">
             </div>
         </div>
-        <button class="btn btn-info see-more-btn" data-target="popularHeader">See More</button>
+        <button class="btn btn-info see-more-btn" data-target="popularHeader">See More Articles</button>
     </div>
 
 </header>
@@ -87,6 +90,7 @@
         <li><a href="#sportNewsSection">Sports</a></li>
         <li><a href="#techNewsSection">Technology</a></li>
         <li><a href="#politicsNewsSection">Politics</a></li>
+        <li><a href="#scienceNewsSection">Science</a></li>
     </ul>
 
     <div class="container">
@@ -103,6 +107,7 @@
     <div id="sportNewsSection">
 
         <div class="container">
+            <img src="images/sport_icon.svg" class="category-icon">
             <h1>Sports News</h1>
             <div class="row"></div>
         </div>
@@ -112,7 +117,8 @@
     <div id="techNewsSection">
 
         <div class="container">
-            <h1>Tech News</h1>
+            <img src="images/tech_icon.svg" class="category-icon">
+            <h1>Technology News</h1>
             <div class="row"></div>
         </div>
 
@@ -121,7 +127,18 @@
     <div id="politicsNewsSection">
 
         <div class="container">
+            <img src="images/politics_icon.svg" class="category-icon">
             <h1>Politics News</h1>
+            <div class="row"></div>
+        </div>
+
+    </div>
+
+    <div id="scienceNewsSection">
+
+        <div class="container">
+            <img src="images/science_icon.svg" class="category-icon">
+            <h1>Science News</h1>
             <div class="row"></div>
         </div>
 
@@ -221,6 +238,7 @@
                 <p id="articleBody"></p>
             </div>
             <div class="modal-footer">
+                <button type="button" class="btn btn-outline-info" id="fullTextButton">Show Full Text</button>
                 <button type="button" class="btn btn-info" id="viewFullArticle">View Full Article</button>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>

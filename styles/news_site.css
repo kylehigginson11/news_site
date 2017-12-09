@@ -24,20 +24,37 @@ header {
 }
 
 header h2:first-child {
-    margin-top: 40px;
+    margin: 20px 0 20px 0;
+    text-align: center;
 }
 
+header .see-more-btn {
+    margin: 10px 0 10px 0;
+}
+
+header .extra {
+    display: none;
+    margin-top: 50px;
+}
+
+/* Styling navbar */
 nav.navbar {
     background-color: #2f3c4e !important;
     color: white !important;
     height: 60px;
 }
 
-nav. .nav-link.active {
+nav .navbar-brand span img {
+    width: 100px;
+}
+
+header .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0 12px 0 12px;
 }
 
 nav.navbar a {
     color: white !important;
+    font-size: 16px;
 }
 
 nav.navbar a:hover {
@@ -53,19 +70,11 @@ nav > div {
     background-color: #2f3c4e;
 }
 
-header .see-more-btn {
-    margin: 10px 0 10px 0;
-}
-
 nav .ui-widget input {
-    width: 300px;
-    background: url("../images/search.png") no-repeat scroll left;
+    width: 200px;
+    background: url("../images/search.svg") no-repeat scroll left;
     background-color: white;
     padding-left: 28px;
-}
-
-.ui-menu .ui-menu-item:first-of-type {
-    padding-top: 16px;
 }
 
 nav p {
@@ -103,7 +112,13 @@ li.dropdown:hover > .dropdown-menu {
     background-color: #2f3c4e;
 }
 
-.full-article {
+/* Drop down list for searching */
+.ui-menu .ui-menu-item:first-of-type {
+    padding-top: 16px;
+}
+
+/* View more button under each article */
+.view-more-btn {
     border-radius: 0;
     margin: auto;
     display: block;
@@ -113,6 +128,7 @@ li.dropdown:hover > .dropdown-menu {
     cursor: pointer;
 }
 
+/* Popular news articles section */
 #popularHeader h6 {
     height: 70px;
 }
@@ -124,16 +140,18 @@ li.dropdown:hover > .dropdown-menu {
     min-width: 250px;
 }
 
+/* Media enquiry for devices with greater than 768px width */
 @media (min-width: 768px) {
     #popularHeader img {
         min-width: 100%;
     }
 
-    .full-article {
+    .view-more-btn {
         min-width: 100%;
     }
 }
 
+/* Styling for each section element */
 section {
     padding: 50px 0 50px 0;
 }
@@ -159,21 +177,27 @@ section .row img {
     width: 100%;
 }
 
-section .full-article {
+@media (max-width: 768px) {
+    .row h6 {
+        text-align: center;
+    }
+
+    .col img {
+        width: 250px!important;
+    }
+}
+
+section .view-more-btn {
     margin-bottom: 40px;
 }
 
-header .extra {
-    display: none;
-    margin-top: 50px;
-}
-
-.sort-by-div {
+/* Articles for each category styling */
+#categoryArticles .sort-by-div {
     float: right;
     padding-top: 20px;
 }
 
-.sort-by-div > #sortBySelect {
+#categoryArticles .sort-by-div > #sortBySelect {
     width: 150px;
     height: 40px;
     top: 0;
@@ -183,9 +207,14 @@ header .extra {
     padding: 0 0 20px 0;
 }
 
-#sportNewsSection button {
-    float: right;
-    cursor: pointer;
+#categoryArticles .category-icon {
+    float: left;
+    padding-top: 10px;
+    height: 40px;
+}
+
+section > div > div {
+    text-align: center;
 }
 
 #categoryArticles .ui-tabs-nav {
@@ -216,9 +245,8 @@ header .extra {
 }
 
 /* Football Centre Styling */
-
 #footballCentre {
-    height: 900px;
+    min-height: 900px;
     background-color: #d8d8d8;
 }
 
@@ -263,6 +291,13 @@ header .extra {
     text-align: center;
 }
 
+@media (max-width: 768px) {
+    #footballCentre th, td {
+        padding: 1px 2px 1px 2px;
+        text-align: center;
+    }
+}
+
 #footballCentre td {
     border-bottom: solid 1px #b6b6b6;
 }
@@ -305,7 +340,7 @@ header .extra {
 
 footer {
     background-color: #2f3c4e;
-    color: #bdbdbd;
+    color: #ededed;
     padding: 10px 0 10px 0;
     text-align: center;
     height: 40px;
