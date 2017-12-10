@@ -14,17 +14,20 @@ function loadHomeArticles() {
             newsData["popular"] = data;
             for (var i = 0; i < 4; i++) {
                 try {
-                    $('#popularHeader').find('.row:first').prepend('<div class="col col-sm-6 col-lg-3"><h6>' + data['response']['mostViewed'][i]['webTitle'] + '</h6>' + '<img src="' + data.response.mostViewed[i]['blocks']['body'][4]['elements'][1]['assets'][0]['file'] +
-                        '" class="img-fluid"><button type="button" class="view-more-btn btn" data-target="' + i + '" data-category="popular">View More</button></div>');
+                    $('#popularHeader').find('.row:first').prepend('<div class="col col-sm-6 col-lg-3"><h6>' + data['response']['mostViewed'][i]['webTitle'] + '</h6>' + '<img src="' +
+                        data.response.mostViewed[i]['blocks']['body'][4]['elements'][1]['assets'][0]['file'] + '" class="img-fluid"><button type="button" class="view-more-btn btn" data-target="' + i
+                        + '" data-category="popular">View More</button></div>');
                 }
-                // try to load again if error, the images on the returned JSON can be structured differently
+                    // try to load again if error, the images on the returned JSON can be structured differently
                 catch (error) {
                     try {
-                        $('#popularHeader').find('.row:first').prepend('<div class="col col-sm-6 col-lg-3"><h6>' + data['response']['mostViewed'][i]['webTitle'] + '</h6>' + '<img src="' + data.response.mostViewed[i]['blocks']['main']['elements'][0]['assets'][0]['file'] +
-                            '" class="img-fluid"><button type="button" class="view-more-btn btn" data-target="' + i + '" data-category="popular">View More</button></div>');
+                        $('#popularHeader').find('.row:first').prepend('<div class="col col-sm-6 col-lg-3"><h6>' + data['response']['mostViewed'][i]['webTitle'] + '</h6>' +
+                            '<img src="' + data.response.mostViewed[i]['blocks']['main']['elements'][0]['assets'][0]['file'] + '" class="img-fluid">' +
+                            '<button type="button" class="view-more-btn btn" data-target="' + i + '" data-category="popular">View More</button></div>');
                     } catch (error) {
-                        $('#popularHeader').find('.row:first').prepend('<div class="col col-sm-6 col-lg-3"><h6>' + data['response']['mostViewed'][i]['webTitle'] + '</h6>' + '<img src="images/image_unavailable.svg" ' +
-                            'class="img-fluid"><button type="button" class="view-more-btn btn" data-target="' + i + '" data-category="popular">View More</button></div>');
+                        $('#popularHeader').find('.row:first').prepend('<div class="col col-sm-6 col-lg-3"><h6>' + data['response']['mostViewed'][i]['webTitle'] + '</h6>' +
+                            '<img src="images/image_unavailable.svg" ' + 'class="img-fluid">' +
+                            '<button type="button" class="view-more-btn btn" data-target="' + i + '" data-category="popular">View More</button></div>');
                     }
                 }
             }
@@ -32,11 +35,13 @@ function loadHomeArticles() {
             //load the next 4 articles to another div which is hidden but can be shown by clicking on see more button
             for (var x = 5; x < 9; x++) {
                 try {
-                    $('header').find('.extra .row').append('<div class="col col-sm-6 col-lg-3"  data-target="' + x + '"><h6>' + data['response']['mostViewed'][x]['webTitle'] + '</h6>' + '<img src="' + data.response.mostViewed[x]['blocks']['main']['elements'][0]['assets'][0]['file'] +
-                        '" class="img-fluid"><button type="button" class="view-more-btn btn" data-target="' + x + '" data-category="popular">View More</button></div>');
+                    $('header').find('.extra .row').append('<div class="col col-sm-6 col-lg-3"  data-target="' + x + '"><h6>' + data['response']['mostViewed'][x]['webTitle'] + '</h6>' +
+                        '<img src="' + data.response.mostViewed[x]['blocks']['main']['elements'][0]['assets'][0]['file'] + '" class="img-fluid">' +
+                        '<button type="button" class="view-more-btn btn" data-target="' + x + '" data-category="popular">View More</button></div>');
                 } catch (error) {
-                    $('header').find('.extra .row').append('<div class="col col-sm-6 col-lg-3"  data-target="' + x + '"><h6>' + data['response']['mostViewed'][x]['webTitle'] + '</h6>' + '<img src="" ' +
-                        'class="img-fluid"><button type="button" class="view-more-btn btn" data-target="' + x + '" data-category="popular">View More</button></div>');
+                    $('header').find('.extra .row').append('<div class="col col-sm-6 col-lg-3"  data-target="' + x + '"><h6>' + data['response']['mostViewed'][x]['webTitle'] + '</h6>' +
+                        '<img src="" ' + 'class="img-fluid">' +
+                        '<button type="button" class="view-more-btn btn" data-target="' + x + '" data-category="popular">View More</button></div>');
                 }
             }
             // pass the data to append into the search variable
@@ -65,15 +70,18 @@ function loadJsonData(url, category) {
             $(section).find('.container > .row').html('');
             for (var i = 0; i < 8; i++) {
                 try {
-                    section.find('.container > .row').append('<div class="col col-sm-6 col-lg-3"><h6>' + data['response']['results'][i]['webTitle'] + '</h6>' + '<img src="' + data.response.results[i]['blocks']['main']['elements'][0]['assets'][0]['file'] + '" class="img-fluid">' +
+                    section.find('.container > .row').append('<div class="col col-sm-6 col-lg-3"><h6>' + data['response']['results'][i]['webTitle'] + '</h6>' +
+                        '<img src="' + data.response.results[i]['blocks']['main']['elements'][0]['assets'][0]['file'] + '" class="img-fluid">' +
                         '<button type="button" class="view-more-btn btn" data-target="' + i + '" data-category="' + category + '">View More</button></div>');
                 } catch (error) {
 
                     try {
-                        section.find('.container > .row').prepend('<div class="col col-sm-6 col-lg-3"><h6>' + data['response']['results'][i]['webTitle'] + '</h6>' + '<img src="' + data.response.results[i]['blocks']['main']['elements'][0]['assets'][0]['file'] +
-                            '" class="img-fluid"><button type="button" class="view-more-btn btn" data-target="' + i + '" data-category="popular">View More</button></div>');
+                        section.find('.container > .row').prepend('<div class="col col-sm-6 col-lg-3"><h6>' + data['response']['results'][i]['webTitle'] + '</h6>' +
+                            '<img src="' + data.response.results[i]['blocks']['main']['elements'][0]['assets'][0]['file'] + '" class="img-fluid">' +
+                            '<button type="button" class="view-more-btn btn" data-target="' + i + '" data-category="popular">View More</button></div>');
                     } catch (error) {
-                        section.find('.container > .row').append('<div class="col col-sm-6 col-lg-3"><h6>' + data['response']['results'][i]['webTitle'] + '</h6>' + '<img src="images/image_unavailable.svg" class="img-fluid">' +
+                        section.find('.container > .row').append('<div class="col col-sm-6 col-lg-3"><h6>' + data['response']['results'][i]['webTitle'] + '</h6>' +
+                            '<img src="images/image_unavailable.svg" class="img-fluid">' +
                             '<button type="button" class="view-more-btn btn" data-target="' + i + '" data-category="' + category + '">View More</button></div>');
                     }
                 }
@@ -106,14 +114,13 @@ function loadSearchData(category, data) {
 // Wait for DOM objects to be loaded, then load popular news stories
 $(document).ready(function () {
 
+    // load the articles for each category
     loadHomeArticles();
     //loadJsonData("https://content.guardianapis.com/search?section=sport&show-blocks=all&api-key=ae2f8afa-f8d7-4d7e-831c-07249c969e98", "sport");
     //loadJsonData("https://content.guardianapis.com/search?section=technology&show-blocks=all&api-key=ae2f8afa-f8d7-4d7e-831c-07249c969e98", "tech");
     //loadJsonData("https://content.guardianapis.com/search?section=politics&show-blocks=all&api-key=ae2f8afa-f8d7-4d7e-831c-07249c969e98", "politics");
-    //loadJsonData("https://content.guardianapis.com/search?section=science&show-blocks=all&api-key=ae2f8afa-f8d7-4d7e-831c-07249c969e98", "politics");
+    //loadJsonData("https://content.guardianapis.com/search?section=science&show-blocks=all&api-key=ae2f8afa-f8d7-4d7e-831c-07249c969e98", "science");
 
-
-    // load the articles for each category
     loadJsonData("sample_data/sport_articles.json", "sport");
     loadJsonData("sample_data/tech_articles.json", "tech");
     loadJsonData("sample_data/politics_articles.json", "politics");
@@ -148,7 +155,8 @@ $(document).ready(function () {
             }
         })
             .data("ui-autocomplete")._renderItem = function (ul, item) {
-            var title = item.label.slice(0, 45) + "...";
+            var title = item.label;
+            $('#clearInputButton').popover('hide');
             return $("<li>")
                 .append("<a>" + title + "</a>")
                 .appendTo(ul);

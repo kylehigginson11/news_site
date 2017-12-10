@@ -48,7 +48,7 @@ function loadFixtures(league, gameWeek) {
 
 // function to load league table, takes in league number as paramter and makes AJAX request.
 function loadLeagueTable(league) {
-    //var url = "https://api.football-data.org/v1/competitions/" + league + "/leagueTable";
+    var url = "https://api.football-data.org/v1/competitions/" + league + "/leagueTable";
     var leagueName = $('#footballCentre').find('nav .nav-link.active').text();
     $('#leagueTableSection').find('h1').text(leagueName + " Table");
     $('#leagueTableSection').find('table tbody:last-child').find("tr:gt(0)").remove();
@@ -90,7 +90,6 @@ $(document).ready(function () {
     // enable jQueryUI tabs and spinner
     $(function () {
         $('#footballCentre').tabs();
-        $("#gameWeekSpinner").spinner();
     });
 
     // load the gameweeks select element
@@ -112,11 +111,15 @@ $(document).ready(function () {
         var week = $('#gameWeekSpinner').val();
         var league = $('#footballCentre').find('nav .nav-link.active').data('target');
         loadFixtures(league, week);
-    })
+    });
 
     // hide the game week select element when the table is shown
     $('#footballCentre').find('ul li a').click(function () {
-        $('#gameWeekForm').toggle();
+        if ($(this).html() === "Fixtures / Results"){
+            $('#gameWeekForm').show();
+        } else {
+            $('#gameWeekForm').hide();
+        }
     });
 
 

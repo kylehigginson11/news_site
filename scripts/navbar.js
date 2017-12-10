@@ -44,7 +44,7 @@ $(document).ready(function () {
         }, 2000);
         $("header nav").find(".active").removeClass("active");
         $('#footballDropdown').addClass("active");
-    })
+    });
 
     // sports centre drop down menu event handler, load whichever league is clicked and scroll to football centre
     $('#categoryDropdown').find('.dropdown-menu a').click(function () {

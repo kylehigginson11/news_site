@@ -71,10 +71,6 @@ nav > div {
 }
 
 nav .ui-widget input {
-    width: 200px;
-    background: url("../images/search.svg") no-repeat scroll left;
-    background-color: white;
-    padding-left: 28px;
 }
 
 nav p {
@@ -83,6 +79,36 @@ nav p {
 
 nav .nav-item.active {
     border-bottom: solid white 3px;
+}
+
+nav .form-control {
+    width: 200px;
+    background: url("../images/search.svg") no-repeat scroll right;
+    background-origin: content-box;
+    background-color: white;
+    padding-left: 10px;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+nav .form-control:focus {
+    width: 400px;
+    background: none;
+    background-origin: content-box;
+    background-color: white;
+    padding-left: 10px;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    li.nav-item {
+        padding: 10px 10px 10px 10px;
+    }
+
+    .navbar-collapse p, .navbar-collapse button, .navbar-collapse div {
+        margin-left: 23px;
+    }
 }
 
 .navbar-nav > li.dropdown:hover > a,
@@ -183,7 +209,7 @@ section .row img {
     }
 
     .col img {
-        width: 250px!important;
+        width: 250px !important;
     }
 }
 
@@ -230,11 +256,19 @@ section > div > div {
     padding-bottom: 0;
     width: 120px;
     text-align: center;
+    font-size: 14px;
+}
+
+#categoryArticles .ui-tabs-active a {
+    background-color: #1972a9!important;
+    color: white!important;
 }
 
 #categoryArticles .ui-tabs-nav li a {
     text-align: center;
     width: 100%;
+    background-color: white;
+    color: #1972a9;
 }
 
 /* Modal styling */
@@ -248,7 +282,6 @@ section > div > div {
 /* Football Centre Styling */
 #footballCentre {
     min-height: 900px;
-    background-color: #f7f7f7;
 }
 
 #footballCentre nav {
@@ -267,6 +300,35 @@ section > div > div {
     display: inline-block;
     text-align: center;
     cursor: pointer;
+    font-size: 16px;
+}
+
+#footballCentre .ui-tabs-nav {
+    text-align: center;
+}
+
+#footballCentre .ui-tabs-nav li {
+    display: inline-block;
+    float: none;
+    top: 0;
+    margin: 0;
+    height: 35px;
+    padding-bottom: 0;
+    width: 200px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#footballCentre .ui-tabs-active a {
+    background-color: #1972a9 !important;
+    color: white !important;
+}
+
+#footballCentre .ui-tabs-nav li a {
+    text-align: center;
+    width: 100%;
+    background-color: white;
+    color: #1972a9;
 }
 
 #footballCentre h1 {
@@ -315,16 +377,6 @@ section > div > div {
 #footballCentre #fixturesSection table td:nth-child(5) {
     text-align: right;
     width: 240px;
-}
-
-#footballCentre .ui-widget-header {
-    background-color: transparent;
-    border: none;
-    padding-top: 150px;
-}
-
-#footballCentre .ui-widget-header li {
-    width: 200px;
 }
 
 #gameWeekForm {

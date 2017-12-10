@@ -10,9 +10,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-bootstrap/0.5pre/css/custom-theme/jquery-ui-1.10.0.custom.css"
+          rel="stylesheet"/>
     <link rel="stylesheet" href="styles/bootstrap.min.css">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="styles/news_site.css">
+    <link rel="stylesheet" href="styles/news_site.min.css">
 
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -60,8 +61,9 @@
                 </li>
             </ul>
             <p>Search Articles</p>
-            <div class="ui-widget">
-                <input id="input" data-toggle="popover" title="Search for Article"
+            <div>
+                <input class="form-control autocomplete" id="input" data-toggle="popover"
+                       placeholder="Search for article" title="Search for Article"
                        data-content="Search for a Keyword here to return related articles">
             </div>
             <button class="btn btn-dark" id="clearInputButton" data-toggle="popover" title="Clear Search"
@@ -155,23 +157,23 @@
         <a class="nav-link" data-target=456>Italian Serie A</a>
     </nav>
 
+    <ul>
+        <li><a href="#leagueTableSection">League Table</a></li>
+        <li><a href="#fixturesSection">Fixtures / Results</a></li>
+    </ul>
+
     <div class="container">
 
         <div class="row">
+
             <div class="col col-md-3">
-
-                <ul>
-                    <li><a href="#leagueTableSection">League Table</a></li>
-                    <li><a href="#fixturesSection">Fixtures / Results</a></li>
-                </ul>
-
                 <div id="gameWeekForm">
                     <h5>Select Game Week</h5>
-                    <input type="number" id="gameWeekSpinner" value="1" max="38"/>
+                    <input class="form-control" type="number" id="gameWeekSpinner" value="1" max="38"/>
                     <button class="btn btn-outline-secondary" id="submitGameWeek">Submit</button>
                 </div>
-
             </div>
+
             <div class="col col-md-9">
 
                 <div id="leagueTableSection">
@@ -235,6 +237,7 @@
             </div>
             <div class="modal-body">
                 <img id="articleImg" src="">
+                <h5 id="articleDate"></h5>
                 <p id="articleBody"></p>
             </div>
             <div class="modal-footer">
@@ -250,7 +253,7 @@
 <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.5/umd/popper.min.js"></script>
 <script src="scripts/bootstrap.min.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 <script src="scripts/modal.min.js"></script>
 <script src="scripts/load_articles.min.js"></script>
 <script src="scripts/article_section.min.js"></script>
