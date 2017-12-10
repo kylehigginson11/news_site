@@ -7,8 +7,7 @@ var searchData = [];
 function loadHomeArticles() {
     $.ajax({
         type: 'GET',
-        //url: "https://content.guardianapis.com/uk?show-most-viewed=true&show-blocks=all&page-size=10&api-key=ae2f8afa-f8d7-4d7e-831c-07249c969e98",
-        url: "sample_data/popular_articles.json",
+        url: "https://content.guardianapis.com/uk?show-most-viewed=true&show-blocks=all&page-size=10&api-key=ae2f8afa-f8d7-4d7e-831c-07249c969e98",
         dataType: 'json',
         success: function (data) {
             newsData["popular"] = data;
@@ -76,7 +75,7 @@ function loadJsonData(url, category) {
                 } catch (error) {
 
                     try {
-                        section.find('.container > .row').prepend('<div class="col col-sm-6 col-lg-3"><h6>' + data['response']['results'][i]['webTitle'] + '</h6>' +
+                        section.find('.container > .row').append('<div class="col col-sm-6 col-lg-3"><h6>' + data['response']['results'][i]['webTitle'] + '</h6>' +
                             '<img src="' + data.response.results[i]['blocks']['main']['elements'][0]['assets'][0]['file'] + '" class="img-fluid">' +
                             '<button type="button" class="view-more-btn btn" data-target="' + i + '" data-category="popular">View More</button></div>');
                     } catch (error) {
@@ -89,7 +88,9 @@ function loadJsonData(url, category) {
             loadSearchData(category, data);
         },
         error: function () {
-            console.log("Error");
+            section.find('.container > .row').append(
+                '<div class="alert alert-danger" role="alert">Unfortunately, there has been a problem loading' +
+                'the news articles at this time, please try again by refreshing</div>');
         }
     });
 }
@@ -116,19 +117,14 @@ $(document).ready(function () {
 
     // load the articles for each category
     loadHomeArticles();
-    //loadJsonData("https://content.guardianapis.com/search?section=sport&show-blocks=all&api-key=ae2f8afa-f8d7-4d7e-831c-07249c969e98", "sport");
-    //loadJsonData("https://content.guardianapis.com/search?section=technology&show-blocks=all&api-key=ae2f8afa-f8d7-4d7e-831c-07249c969e98", "tech");
-    //loadJsonData("https://content.guardianapis.com/search?section=politics&show-blocks=all&api-key=ae2f8afa-f8d7-4d7e-831c-07249c969e98", "politics");
-    //loadJsonData("https://content.guardianapis.com/search?section=science&show-blocks=all&api-key=ae2f8afa-f8d7-4d7e-831c-07249c969e98", "science");
+    loadJsonData("https://content.guardianapis.com/search?section=sport&show-blocks=all&api-key=ae2f8afa-f8d7-4d7e-831c-07249c969e98", "sport");
+    loadJsonData("https://content.guardianapis.com/search?section=technology&show-blocks=all&api-key=ae2f8afa-f8d7-4d7e-831c-07249c969e98", "tech");
+    loadJsonData("https://content.guardianapis.com/search?section=politics&show-blocks=all&api-key=ae2f8afa-f8d7-4d7e-831c-07249c969e98", "politics");
+    loadJsonData("https://content.guardianapis.com/search?section=science&show-blocks=all&api-key=ae2f8afa-f8d7-4d7e-831c-07249c969e98", "science");
 
-    loadJsonData("sample_data/sport_articles.json", "sport");
-    loadJsonData("sample_data/tech_articles.json", "tech");
-    loadJsonData("sample_data/politics_articles.json", "politics");
-    loadJsonData("sample_data/science_articles.json", "science");
 
     // load recent article headlines to marque which is fixed to bottom of screen
-    //$.get("https://content.guardianapis.com/search?order-by=newest&page-size=6&api-key=ae2f8afa-f8d7-4d7e-831c-07249c969e98", function (data, status) {
-    $.get("sample_data/recent_articles.json", function (data, status) {
+    $.get("https://content.guardianapis.com/search?order-by=newest&page-size=6&api-key=ae2f8afa-f8d7-4d7e-831c-07249c969e98", function (data, status) {
         var recentNews = "";
 
         for (var a = 0; a < 6; a++) {
@@ -150,6 +146,7 @@ $(document).ready(function () {
                 $("#input").val(ui.item.label);
                 var index = ui.item.index;
                 var category = ui.item.category;
+                $('[data-toggle="popover"]').popover('hide');
                 show_modal(category, index, newsData);
                 return false;
             }

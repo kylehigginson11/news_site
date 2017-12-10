@@ -93,7 +93,7 @@ nav .form-control {
 }
 
 nav .form-control:focus {
-    width: 400px;
+    width: 300px;
     background: none;
     background-origin: content-box;
     background-color: white;

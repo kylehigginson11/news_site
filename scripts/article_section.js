@@ -14,7 +14,7 @@ $(document).ready(function () {
             $(this).text("See Less");
         } else {
             $(section).hide("blind", 500);
-            $(this).text("See More");
+            $(this).text("See More Articles");
         }
     });
 

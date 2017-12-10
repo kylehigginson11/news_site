@@ -10,8 +10,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-bootstrap/0.5pre/css/custom-theme/jquery-ui-1.10.0.custom.css"
-          rel="stylesheet"/>
+    <link rel="stylesheet" href="styles/jquery-ui.min.css">
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/news_site.min.css">
 
@@ -60,11 +59,11 @@
                     </div>
                 </li>
             </ul>
-            <p>Search Articles</p>
+            <p data-toggle="popover" title="Search for Article"
+                       data-content="Search for a Keyword here to return related articles"
+            data-placement="left">Search Articles</p>
             <div>
-                <input class="form-control autocomplete" id="input" data-toggle="popover"
-                       placeholder="Search for article" title="Search for Article"
-                       data-content="Search for a Keyword here to return related articles">
+                <input class="form-control autocomplete" id="input" placeholder="Search for article">
             </div>
             <button class="btn btn-dark" id="clearInputButton" data-toggle="popover" title="Clear Search"
                     data-content="Click here to clear the search field" data-placement="bottom">Clear

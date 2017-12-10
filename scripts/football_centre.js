@@ -18,7 +18,7 @@ function loadFixtures(league, gameWeek) {
     $.ajax({
         type: 'GET',
         headers: {'X-Auth-Token': 'eef44c20bd9e468597d2c7c85d88eb46'},
-        url: "sample_data/fixtures.json",
+        url: url,
         dataType: 'json',
         success: function (data) {
             var fixtures_array = data['fixtures'];
@@ -55,7 +55,7 @@ function loadLeagueTable(league) {
     $.ajax({
         type: 'GET',
         headers: {'X-Auth-Token': 'eef44c20bd9e468597d2c7c85d88eb46'},
-        url: "sample_data/prem_table.json",
+        url: url,
         dataType: 'json',
         success: function (data) {
             var standings_array = data['standing'];
