@@ -49,7 +49,6 @@ $(document).ready(function () {
     // sports centre drop down menu event handler, load whichever league is clicked and scroll to football centre
     $('#categoryDropdown').find('.dropdown-menu a').click(function () {
         var tab = $(this).data('target');
-        console.log(tab);
         // toggle jQueryUI tab
         var section = $("#categoryArticles");
         section.tabs("option", "active", tab);

@@ -23,15 +23,19 @@ $(document).ready(function () {
         var url = "";
         var section = "";
         var active_tab = $("#categoryArticles").tabs('option', 'active');
+		console.log(active_tab);
         if (active_tab === 0) {
-            url = "http://content.guardianapis.com/search?section=sport&show-blocks=all&order-by=" + this.value + "&api-key=ae2f8afa-f8d7-4d7e-831c-07249c969e98";
+            url = "https://content.guardianapis.com/search?section=sport&show-blocks=all&order-by=" + this.value + "&api-key=ae2f8afa-f8d7-4d7e-831c-07249c969e98";
             section = "sport"
         } else if (active_tab === 1) {
-            url = "http://content.guardianapis.com/search?section=technology&show-blocks=all&order-by=" + this.value + "&api-key=ae2f8afa-f8d7-4d7e-831c-07249c969e98";
+            url = "https://content.guardianapis.com/search?section=technology&show-blocks=all&order-by=" + this.value + "&api-key=ae2f8afa-f8d7-4d7e-831c-07249c969e98";
             section = "tech"
-        } else if (active_tab === 0) {
-            url = "http://content.guardianapis.com/search?section=politics&show-blocks=all&order-by=" + this.value + "&api-key=ae2f8afa-f8d7-4d7e-831c-07249c969e98";
+        } else if (active_tab === 2) {
+            url = "https://content.guardianapis.com/search?section=politics&show-blocks=all&order-by=" + this.value + "&api-key=ae2f8afa-f8d7-4d7e-831c-07249c969e98";
             section = "politics"
+        } else if (active_tab === 3) {
+            url = "https://content.guardianapis.com/search?section=science&show-blocks=all&order-by=" + this.value + "&api-key=ae2f8afa-f8d7-4d7e-831c-07249c969e98";
+            section = "science"
         }
         loadJsonData(url, section);
     })
